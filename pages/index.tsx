@@ -1,27 +1,48 @@
-import React,{useState, useEffect, createContext} from "react";
-import styled from 'styled-components'
+import React, { useState, useEffect, createContext } from "react";
+import styled from "styled-components";
+import Link from "next/link";
 
-
-export const Header = styled.header` 
-display: flex;
-background-color: #333;
-width: 100%;
-height: 50px;
-align-items: center;
-justify-content: space-between;
-`
-
+ const Header = styled.header`
+  display: flex;
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  ul > li {
+    list-style: none;
+    display: inline-flex;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+    &:hover {
+      color: #ffc107;
+    }
+  }
+`;
 
 export default function Home() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   return (
-    <div> 
+
       <Header>
-        <h1>Home</h1>
+        <ul>
+          <li>
+            <Link href='/Projetos'>Projetos</Link>
+          </li>
+          <li>
+            <Link href='/Contato'>Contato</Link>
+          </li>
+          <li>
+            <Link href='/'>Sobre</Link>
+          </li>
+        </ul>
       </Header>
-      <h1>Olá Mundo </h1>
-      <p>Você clicou {count} vezes</p>
-      <button onClick={() => setCount(count+1)}>Click</button>
-    </div>
-  )
+
+  );
 }
