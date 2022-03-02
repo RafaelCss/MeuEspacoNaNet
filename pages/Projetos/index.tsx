@@ -1,8 +1,10 @@
 import React, { ReactElement } from "react";
+import Cabecalho from "../../Components/Header/Header";
 
-export function Projetos(): ReactElement {
+export default function Projetos(): ReactElement {
   return (
     <div>
+      <Cabecalho />
       <p>Meus Projetos</p>
     </div>
   );
