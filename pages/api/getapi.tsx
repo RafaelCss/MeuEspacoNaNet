@@ -1,11 +1,7 @@
+import axios from "axios";
 
-
- export  const GetApi = async () =>{
-    const response = fetch("https://api.github.com/users/RafaelCss")
-    .then(res => 
-    console.log(res));
-    return response;
-}
+export const GetApi = async () => {
+  const response = await axios.get("https://api.github.com/users/RafaelCss").then((res) => res);
+  return response;
+};
 GetApi();
-
- 
