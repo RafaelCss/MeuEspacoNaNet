@@ -1,5 +1,5 @@
 import React from "react";
-import Cabecalho from "../../Components/Header/Header";
+import Cabecalho from "../../Components/Entidades/Header/Header";
 
 export default function Contato() {
   return (

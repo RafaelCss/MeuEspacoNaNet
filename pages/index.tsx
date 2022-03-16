@@ -1,6 +1,6 @@
 import React from "react";
-import { Base } from "../Components/Apresentacao/Corpo";
-import Cabecalho from "../Components/Header/Header";
+import { Base } from "../Components/Entidades/Apresentacao/Corpo";
+import Cabecalho from "../Components/Entidades/Header/Header";
 
 export default function Home() {
   return (

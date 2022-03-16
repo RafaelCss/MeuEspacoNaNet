@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import Cabecalho from "../../Components/Header/Header";
+import Cabecalho from "../../Components/Entidades/Header/Header";
 import { GetApi } from "../api/getapi";
 export default function Projetos(): ReactElement {
 
