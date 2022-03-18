@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
-import Buscador from "../../Elementos/Busca/Buscador";
 import { HeaderPage } from "./Style";
 
 export default function Cabecalho(): ReactElement {
@@ -15,7 +14,6 @@ export default function Cabecalho(): ReactElement {
       <Link href='/Contato'>
         <a>Contato</a>
       </Link>
-      <Buscador />
     </HeaderPage>
   );
 }
