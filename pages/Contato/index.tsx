@@ -1,10 +1,10 @@
 import React from "react";
-import Cabecalho from "../../Components/Header/Header";
+import MenuHeader from "../../Components/Header/Header";
 
 export default function Contato() {
   return (
     <div>
-      <Cabecalho />
+      <MenuHeader />
     </div>
   );
 }

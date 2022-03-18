@@ -1,11 +1,13 @@
 import React from "react";
+import Banner from "../Components/Entitades/Home/Apresentacao/Layout";
 
-import Cabecalho from "../Components/Header/Header";
+import Menu from "../Components/Header/Header";
 
 export default function Home() {
   return (
     <>
-      <Cabecalho />
+      <Menu />
+      <Banner />
     </>
   );
 }

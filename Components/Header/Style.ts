@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const HeaderPage = styled.header`
+export const MenuHeader = styled.header`
   display: flex;
   background-color: #333;
   width: 100%;

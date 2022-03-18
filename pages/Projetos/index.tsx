@@ -1,12 +1,10 @@
 import React, { ReactElement } from "react";
-import Cabecalho from "../../Components/Header/Header";
+import MenuHeader from "../../Components/Header/Header";
 
 export default function Projetos(): ReactElement {
-
-
   return (
     <div>
-      <Cabecalho />
+      <MenuHeader />
       <p>Meus Projetos</p>
     </div>
   );

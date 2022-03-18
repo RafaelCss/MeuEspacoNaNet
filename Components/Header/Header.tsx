@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
-import { HeaderPage } from "./Style";
+import { MenuHeader } from "./Style";
 
-export default function Cabecalho(): ReactElement {
+export default function Menu(): ReactElement {
   return (
-    <HeaderPage>
+    <MenuHeader>
       <Link href='/'>
         <a>Home</a>
       </Link>
@@ -14,6 +14,6 @@ export default function Cabecalho(): ReactElement {
       <Link href='/Contato'>
         <a>Contato</a>
       </Link>
-    </HeaderPage>
+    </MenuHeader>
   );
 }
