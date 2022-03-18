@@ -1,13 +1,7 @@
 import React from "react";
-import Banner from "../Components/Entitades/Home/Apresentacao/Layout";
+import Home from "../Components/Entitades/Home";
 
-import Menu from "../Components/Header/Header";
-
-export default function Home() {
-  return (
-    <>
-      <Menu />
-      <Banner />
-    </>
-  );
+export default function PaginaInicial() {
+  return <Home />;
 }
+   
