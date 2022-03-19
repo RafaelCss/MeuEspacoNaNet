@@ -3,8 +3,12 @@ import { BannerHome } from "./Style";
 function Banner() {
   return (
     <BannerHome>
-      <h1>Web Desenvolvedor</h1>
-      <h2>By Rafael Carlos</h2>
+      <div>
+        <h1>Web Desenvolvedor</h1>
+      </div>
+      <div>
+        <h2>By Rafael Carlos</h2>
+      </div>
     </BannerHome>
   );
 }

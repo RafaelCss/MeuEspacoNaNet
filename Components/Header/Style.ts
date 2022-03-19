@@ -1,14 +1,14 @@
-import React from "react";
 import styled from "styled-components";
 
 export const MenuHeader = styled.header`
   display: flex;
   background-color: #333;
   width: 100%;
-  height: 50px;
+  height: 20vh;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px;
+  margin-top: 0px;
   a {
     list-style: none;
     display: inline-flex;
@@ -17,7 +17,7 @@ export const MenuHeader = styled.header`
     font-weight: bold;
     align-items: center;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
     &:hover {
       color: #ffc107;
