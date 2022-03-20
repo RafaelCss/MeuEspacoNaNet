@@ -21,12 +21,7 @@ function Banner() {
 
   return (
     <BannerHome>
-      <div>
-        <h1>Desenvolvedor Web</h1>
-      </div>
-      <div>
-        <h2>Rafael Carlos</h2>
-      </div>
+      <h1>Desenvolvedor Web</h1>
       <Container>
         {texto}
         <TextCursor />

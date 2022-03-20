@@ -8,6 +8,7 @@ export const MenuHeader = styled.header`
   justify-content: space-evenly;
   padding: 10px;
   margin-top: 0px;
+  border-bottom: solid 1px white;
   a {
     list-style: none;
     display: flex;
