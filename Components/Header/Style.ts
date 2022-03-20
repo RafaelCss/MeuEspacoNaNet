@@ -2,22 +2,20 @@ import styled from "styled-components";
 
 export const MenuHeader = styled.header`
   display: flex;
-  background-color: #333;
+  background-color: #232526;
   width: 100%;
   height: 20vh;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px;
   margin-top: 0px;
   a {
     list-style: none;
-    display: inline-flex;
+    display: flex;
     color: white;
     font-size: 20px;
     font-weight: bold;
-    align-items: center;
     text-decoration: none;
-    margin-right: 5px;
+    margin: 30px;
     cursor: pointer;
     &:hover {
       color: #ffc107;
