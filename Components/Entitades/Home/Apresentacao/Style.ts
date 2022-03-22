@@ -10,7 +10,7 @@ export const BannerHome = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   h1 {
     display: flex;
     margin-top: 40px;
@@ -39,5 +39,6 @@ export const Container = styled.p`
   margin: 0;
   font-size: 20px;
   font-weight: 500;
+  color: white;
 `;
 

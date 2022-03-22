@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BannerHome, TextCursor, Container } from "./Style";
 
 function Banner() {
-  const mensagem = "BEM VINDO AO MEU MUNDO !, FIQUE À VONTADE ; )";
+  const mensagem = "SEJA BEM VINDO !";
 
   const [texto, setTexto] = useState("");
 
