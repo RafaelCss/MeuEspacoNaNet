@@ -6,7 +6,7 @@ function Banner() {
 
   const [texto, setTexto] = useState("");
 
-  const animacaoTexto = (texto1, i = 0) => {
+  const animacaoTexto = async (texto1, i = 0) => {
     if (i < mensagem.length) {
       setTexto(texto1.slice(0, i + 1));
       setTimeout(() => {
@@ -17,6 +17,7 @@ function Banner() {
 
   useEffect(() => {
     animacaoTexto(mensagem);
+    setTexto(" ");
   }, []);
 
   return (

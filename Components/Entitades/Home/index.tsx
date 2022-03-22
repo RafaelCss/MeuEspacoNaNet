@@ -10,16 +10,12 @@ const { Header, Footer, Sider, Content } = Layout;
 function Home(): ReactElement {
   return (
     <Layout>
-      <Header className='testp'>
-        <Menu />
-      </Header>
+      <Menu />
       <Content>
         <Banner />
         <Cards />
       </Content>
-      <Footer>
-        <Rodape />
-      </Footer>
+      <Rodape />
     </Layout>
   );
 }

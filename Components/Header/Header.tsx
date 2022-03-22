@@ -6,7 +6,7 @@ import { MenuHeader } from "./Style";
 
 export default function Menu(): ReactElement {
   return (
-    <MenuHeader className='sssss'>
+    <MenuHeader>
       <Link href='/'>
         <a>Home</a>
       </Link>
