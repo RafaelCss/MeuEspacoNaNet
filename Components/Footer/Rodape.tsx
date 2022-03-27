@@ -8,7 +8,7 @@ export function Rodape() {
     <RodapeHome>
       <Link href={"https://github.com/RafaelCss"}>
         <a>
-          <Image src={github} width={30} height={30}></Image>
+          <Image color='white' src={github} width={30} height={30} alt={"github"}></Image>
         </a>
       </Link>
     </RodapeHome>

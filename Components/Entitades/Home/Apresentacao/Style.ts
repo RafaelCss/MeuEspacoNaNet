@@ -11,6 +11,7 @@ export const BannerHome = styled.div`
   background-position: center;
   width: 100%;
   height: 60vh;
+  border-top: solid 1px;
   h1 {
     display: flex;
     margin-top: 40px;

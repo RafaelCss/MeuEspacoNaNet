@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const ContainerTecnologias = styled.section`
-  display: inline-block;
+  display: flex;
+  overflow: auto;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 10px;
   margin: 10px 0px 0 0;
   width: 100%;
@@ -21,26 +23,27 @@ export const Titulo = styled.div`
 `;
 export const ContainerCards = styled.div`
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   margin: 10px 20px 20px 0;
   width: 100%;
-  height: 300px;
+  height: 900px;
   justify-content: space-around;
+  align-items: center;   
 `;
 
 export const Card = styled.div`
   display: flex;
-  margin: 10px 10px 10px 10px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 5px 5px 5px 5px;
   width: 200px;
   height: 200px;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-size: cover;
-  background-position: center;
-  background-color: #fff;
   border-radius: 10px;
+  background: #304352; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #d7d2cc, #304352); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   p {
     font-size: 1.5em;
   }

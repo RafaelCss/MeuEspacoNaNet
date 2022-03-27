@@ -6,7 +6,7 @@ function Banner() {
 
   const [texto, setTexto] = useState("");
 
-  const animacaoTexto = async (texto1, i = 0) => {
+  const animacaoTexto = async (texto1: string, i: number = 0): Promise<void> => {
     if (i < mensagem.length) {
       setTexto(texto1.slice(0, i + 1));
       setTimeout(() => {
@@ -21,7 +21,7 @@ function Banner() {
   }, []);
 
   return (
-    <BannerHome>
+    <BannerHome className='teste'>
       <h1>Desenvolvedor Web</h1>
       <Container>
         {texto}
