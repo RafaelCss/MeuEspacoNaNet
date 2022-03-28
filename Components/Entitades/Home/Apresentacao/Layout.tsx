@@ -21,7 +21,7 @@ function Banner() {
   }, []);
 
   return (
-    <BannerHome className='teste'>
+    <BannerHome>
       <h1>Desenvolvedor Web</h1>
       <Container>
         {texto}

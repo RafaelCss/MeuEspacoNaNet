@@ -1,9 +1,8 @@
-import React, { useDebugValue } from "react";
+import React, { useDebugValue, useState } from "react";
 import MenuHeader from "../../Components/Header/Header";
 import { Table, Button, Space, Input, Checkbox, Tree } from "antd";
-import { sorce } from "./dados";
+import { source } from "./dados";
 import { SearchOutlined } from "@ant-design/icons";
-import Head from "next/head";
 
 interface IState {
   searchText: string;
@@ -15,13 +14,15 @@ interface IState {
 }
 export default function Contato() {
   function handleSearch(confirm) {
+    console.log("confirm", confirm);
     confirm();
   }
 
   function handleReset(clearFilters) {
-    // desmarcar checkbox,3
-    console.log(clearFilters);
     clearFilters();
+  }
+  {
+    const [checkbox, Setcheckbox] = useState("false");
   }
 
   const getColumnSearchProps = (dataIndex) => ({
@@ -30,16 +31,19 @@ export default function Contato() {
         {dataIndex == "ingles" ? (
           <Space>
             <Checkbox.Group>
-              <Checkbox value={"Ativo"} onChange={(e) => setSelectedKeys("true" ? ["true"] : [])}>
+              <Checkbox checked={true} value={"Ativo"} onChange={(e) => setSelectedKeys("true" ? ["true"] : [])}>
                 Ativo
               </Checkbox>
-              <Checkbox value={"Inativo"} onChange={(e) => setSelectedKeys("false" ? ["false"] : [])}>
+
+              <Checkbox checked={true} value={"Inativo"} onChange={(e) => setSelectedKeys("false" ? ["false"] : [])}>
                 Inativo
               </Checkbox>
+
               <Button type='primary' onClick={() => handleSearch(confirm)} icon={<SearchOutlined />} size='small' style={{ width: 90 }}>
                 Buscar
               </Button>
-              <Button onClick={() => handleReset(clearFilters)} size='small' style={{ width: 90 }}>
+
+              <Button onClick={(e) => handleReset(clearFilters)} size='small' style={{ width: 90 }}>
                 Limpar
               </Button>
             </Checkbox.Group>
@@ -51,7 +55,7 @@ export default function Contato() {
               <Button type='primary' onClick={() => handleSearch(confirm)} icon={<SearchOutlined />} size='small' style={{ width: 90 }}>
                 Buscar
               </Button>
-              <Button onClick={() => handleReset(clearFilters)} size='small' style={{ width: 90 }}>
+              <Button onClick={(e) => handleReset(clearFilters)} size='small' style={{ width: 90 }}>
                 Limpar
               </Button>
             </Space>
@@ -104,7 +108,7 @@ export default function Contato() {
   return (
     <>
       <MenuHeader />
-      <Table key={id} columns={columns} dataSource={sorce} size={"small"} bordered={true}>
+      <Table key={id} columns={columns} dataSource={source} size={"small"} bordered={true}>
         Olga
       </Table>
     </>

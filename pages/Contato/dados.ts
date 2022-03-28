@@ -1,4 +1,4 @@
-export const sorce = [
+export const source = [
   {
     name: "Rafael carlos",
     age: "31",
