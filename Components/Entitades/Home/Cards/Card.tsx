@@ -1,4 +1,4 @@
-import { Card } from "./Style";
+/* import { Card } from "./Style";
 import Image from "next/image";
 
 interface Tecnologias {
@@ -29,4 +29,4 @@ function RenderCards(tecnologias: Tecnologias) {
   );
 }
 RenderCards(tecnologias);
-export default RenderCards;
+export default RenderCards; */
