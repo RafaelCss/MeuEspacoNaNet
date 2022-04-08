@@ -1,9 +1,7 @@
 {
   "name": "npm",
   "private": true,
-  "engines": {
-    "node": "16.x"
-  },
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
