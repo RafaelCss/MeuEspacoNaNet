@@ -10,7 +10,7 @@ export default function Cards() {
         <h1>Tecnologias</h1>
       </Titulo>
       <ContainerCards>
-        {tecnologias.map((i, index) => {
+        {[...tecnologias].map((i, index) => {
           return (
             <Card key={index + 1}>
               <p>{i.tec}</p>
