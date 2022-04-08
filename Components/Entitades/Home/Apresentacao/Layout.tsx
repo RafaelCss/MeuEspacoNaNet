@@ -22,7 +22,7 @@ function Banner() {
 
   return (
     <BannerHome>
-      <h1>Desenvolvedor Web</h1>
+      <h1>Developer Web</h1>
       <Container>
         {texto}
         <TextCursor />
