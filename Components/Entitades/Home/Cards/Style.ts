@@ -59,11 +59,14 @@ export const Card = styled.div`
 
 export const CardCarousel = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0px 5px 5px 0px;
   width: 100%;
   height: 300px;
-  background: #304352; /* fallback for old browsers */
-  padding: 10px;
+  background: grey; 
+  padding-top: 50px;
+  padding-bottom: 50px;
 `;
