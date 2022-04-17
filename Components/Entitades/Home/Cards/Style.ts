@@ -9,16 +9,17 @@ export const ContainerTecnologias = styled.section`
   margin: 10px 0px 0 0;
   width: 100%;
   height: 100%;
+  background-color: black;
 `;
 export const Titulo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20px;
+  height: 100px;
   margin: 5px 0px;
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 `;
 export const ContainerCards = styled.div`
@@ -53,4 +54,19 @@ export const Card = styled.div`
     box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.75);
     pointer-events: stroke;
   }
+`;
+
+
+export const CardCarousel = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px 5px 0px;
+  width: 100%;
+  height: 300px;
+  background: grey; 
+  padding-top: 50px;
+  padding-bottom: 50px;
 `;
