@@ -1,28 +1,43 @@
-import { ContainerTecnologias, Titulo, Card, ContainerCards } from "./Style";
-import Image from "next/image";
-import Link from "next/link";
-import { tecnologias } from "./tecnologias";
+import {
+  ContainerTecnologias,
+  Titulo,
+  Card,
+  ContainerCards,
+  CardCarousel,
+} from './Style'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Carousel } from 'antd'
+import { tecnologias } from './tecnologias'
 
-export default function Cards() {
+export default function CarrosselTecnologias() {
+
+  function ClickCard() {
+    console.log('clicou')
+  }
+
   return (
-    <ContainerTecnologias>
-      <Titulo>
-        <h1>Tecnologias</h1>
-      </Titulo>
-      <ContainerCards>
-        {[...tecnologias].map((i, index) => {
-          return (
-            <Card key={index + 1}>
-              <p>{i.tec}</p>
-              <Image alt='logo' src={i.img} width={50} height={50} />
-              <p>{i.comentario}</p>
-              <Link href={i.link}>
-                <a>{i.botao}</a>
+    <>
+      <Titulo><h1>Minhas Tecnologias</h1></Titulo>
+      <Carousel   autoplay afterChange={ClickCard}>
+        {tecnologias.map((item, index) => (
+          <CardCarousel key={index}>
+            <h2>{item.tec}</h2>
+            <Image src={item.img} width={100} height={100} alt="imagens" />
+            <h2>{item.comentario}</h2>
+            <a>
+              <Link  href={item.link}>
+                <a>{item.botao}</a>
               </Link>
-            </Card>
-          );
-        })}
-      </ContainerCards>
-    </ContainerTecnologias>
-  );
+            </a>
+          </CardCarousel>
+        ))}
+      </Carousel>
+      <ContainerTecnologias>
+        <ContainerCards>
+          <Card></Card>
+        </ContainerCards>
+      </ContainerTecnologias>
+    </>
+  )
 }
