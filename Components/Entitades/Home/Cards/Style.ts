@@ -19,6 +19,7 @@ export const Titulo = styled.div`
   width: 100%;
   height: 100px;
   margin: 5px 0px;
+  background-color: ${paleta[0].DeepSkyBlue1};
   h1 {
     font-size: 3em;
   }
@@ -67,7 +68,7 @@ export const CardCarousel = styled.div`
   margin: 0px 5px 5px 0px;
   width: 50%;
   height: 300px;
-  background: ${paleta[0].AcoAzul3}; 
+  background: white; 
   padding-top: 50px;
   padding-bottom: 50px;
 `;

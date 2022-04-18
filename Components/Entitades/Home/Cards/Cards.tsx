@@ -25,11 +25,9 @@ export default function CarrosselTecnologias() {
             <h2>{item.tec}</h2>
             <Image src={item.img} width={100} height={100} alt="imagens" />
             <h2>{item.comentario}</h2>
-            <a>
               <Link  href={item.link}>
                 <a>{item.botao}</a>
               </Link>
-            </a>
           </CardCarousel>
         ))}
       </Carousel>
