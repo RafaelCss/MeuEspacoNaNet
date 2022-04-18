@@ -6,7 +6,7 @@ export const RodapeHome = styled.footer`
   border-top: solid 1px;
   background-color: #232526;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   a {

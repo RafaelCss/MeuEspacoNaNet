@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {paleta} from '../../../../public/Estilos/PaletaCores/Cores';
 
 export const ContainerTecnologias = styled.section`
   display: flex;
@@ -64,9 +65,9 @@ export const CardCarousel = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0px 5px 5px 0px;
-  width: 100%;
+  width: 50%;
   height: 300px;
-  background: grey; 
+  background: ${paleta[0].AcoAzul3}; 
   padding-top: 50px;
   padding-bottom: 50px;
 `;
