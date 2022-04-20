@@ -1,4 +1,4 @@
-import MenuHeader from "../../Components/Header/Header";
+import MenuHeader from "../../Components/Servicos/Header/Index";
 
 export default function Contato() {
   return <MenuHeader />;

@@ -1,23 +1,18 @@
-import { ReactElement } from "react";
-import Menu from "../../Header/Header";
-import Banner from "./Apresentacao/Layout";
-import { Layout } from "antd";
-import { Rodape } from "../../Footer/Rodape";
-import Cards from "./Cards/Cards";
-
-const { Header, Footer, Sider, Content } = Layout;
+import { ReactElement } from 'react'
+import Menu from '../../Servicos/Header/Index'
+import Banner from './AnimacaoTexto/Index'
+import { Rodape } from '../../Servicos/Footer/Index'
+import Cards from './Apresentacao/Cards'
 
 function Home(): ReactElement {
   return (
-    <Layout>
+    <>
       <Menu />
-      <Content>
-        <Banner />
-        <Cards />
-      </Content>
+      <Banner />
+      <Cards />
       <Rodape />
-    </Layout>
-  );
+    </>
+  )
 }
 
-export default Home;
+export default Home

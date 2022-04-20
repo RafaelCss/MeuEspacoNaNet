@@ -1,8 +1,8 @@
 import { RodapeHome } from "./Style";
 import Image from "next/image";
 import Link from "next/link";
-import github from "../../public/image/github.svg";
-import linkedin from "../../public/image/linkedin.svg";
+import github from '../../../public/image/github.svg';
+import linkedin from "../../../public/image/linkedin.svg";
 
 export function Rodape() {
   return (
