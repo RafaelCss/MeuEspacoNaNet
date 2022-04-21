@@ -1,11 +1,6 @@
-import React, { ReactElement } from "react";
-import Menu from "../../Components/Servicos/Header/Index";
+import React, { ReactElement } from 'react'
+import PageProjetos from '../../Components/Entitades/Projetos'
 
 export default function Projetos(): ReactElement {
-  return (
-    <>
-      <Menu/>
-      <p>Meus Projetos</p>
-    </>
-  );
+  return <PageProjetos />
 }
