@@ -31,7 +31,7 @@ export const ContainerCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 10px 10px;
-  width: 100%;
+  width: 80%;
   height:80%;
   text-align: center;
   justify-content: space-around;
@@ -66,7 +66,7 @@ export const CardCarousel = styled(Carousel)`
   justify-content: center;
   align-items: center;
   margin:0px;
-  width: 800px;
+  width: 500px;
   height: 300px;
 `;
 

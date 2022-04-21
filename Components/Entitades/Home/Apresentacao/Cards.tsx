@@ -38,7 +38,7 @@ export default function CarrosselTecnologias() {
         {cursos.map((item, index) => {
           return (
             <>
-              <CardCursos id={index.toString()}>
+              <CardCursos key={index.toString()}>
                 <Link  href={item.link} passHref>
                 <Image 
                 src={item.img} 
