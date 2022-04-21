@@ -1,5 +1,6 @@
-import MenuHeader from "../../Components/Servicos/Header/Index";
+import PageContato from '../../Components/Entitades/Contato/index'
+
 
 export default function Contato() {
-  return <MenuHeader />;
+  return <PageContato/>
 }

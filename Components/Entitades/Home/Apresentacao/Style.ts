@@ -8,10 +8,10 @@ export const ContainerTecnologias = styled.section`
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
-  margin: 10px 0px 0 0;
+  margin: 0px 0px 0px 0px;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color:black;
 `;
 export const Titulo = styled.div`
   display: flex;
@@ -19,8 +19,10 @@ export const Titulo = styled.div`
   align-items: center;
   width: 100%;
   height: 100px;
+  font-size: 3rem;
+  font-weight: 500;
   margin: 0px;
-  background-color: #304352;
+  color: white;
   h1 {
     font-size: 3em;
   }
@@ -28,22 +30,24 @@ export const Titulo = styled.div`
 export const ContainerCards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0px;
+  margin: 10px 10px;
   width: 100%;
-  height: 900px;
+  height:80%;
+  text-align: center;
   justify-content: space-around;
   align-items: center;   
 `;
 
 export const Card = styled.div`
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 5px 5px 5px 5px;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
+  margin: 20px 5px 5px 5px;
+  width: 80%;
+  height:50%;
+  background-color: white;
+  padding-top: 10px;
   p {
     font-size: 1.5em;
   }
@@ -62,9 +66,17 @@ export const CardCarousel = styled(Carousel)`
   justify-content: center;
   align-items: center;
   margin:0px;
-  width: 80%;
+  width: 800px;
   height: 300px;
-  border: solid 1px black;
-  background: #304352; 
-  padding-bottom: 50px;
+`;
+
+export const CardCursos = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 5px 5px 5px;
+  width: 20%;
+  height:15%;
+  background-color: white;
+  cursor: pointer;
 `;

@@ -65,6 +65,10 @@ export const tecnologias = [
     img: "/image/typescript.png",
     comentario: "",
   },
+  
+];
+
+export const cursos =[
   {
     tec: "Alura Cursos",
     img: "/image/alura.jpg",
@@ -79,4 +83,11 @@ export const tecnologias = [
     comentario: "Certificado de cursos feitos na Udemy",
     botao: "Certificado",
   },
-];
+  {
+    tec: "FAM Faculdade da Americas",
+    img: "/image/fam.png",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-6b0f8f22-5d75-408d-a203-7d01485093a7.jpg",
+    comentario: 'Curso em andamento de Sistemas da Informações',
+    botao: "Certificado",
+  },
+]

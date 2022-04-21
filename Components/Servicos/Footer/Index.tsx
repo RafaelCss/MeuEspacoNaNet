@@ -4,7 +4,7 @@ import Link from "next/link";
 import github from '../../../public/image/github.svg';
 import linkedin from "../../../public/image/linkedin.svg";
 
-export function Rodape() {
+export  default function Rodape() {
   return (
     <RodapeHome>
       <Link href={"https://github.com/RafaelCss"}>
