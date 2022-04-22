@@ -84,8 +84,9 @@ export default function CarrosselTecnologias() {
             }
           })}
           <ModalApp
+            title='FAM Faculdade das Americas'
             onOk={handleOk}
-            msg="Cursando Sistemas da Informação no 3º período"
+            msg={`Cursando Sistemas da Informação no 3º período`}
             isModalVisible={isModalVisible}
             onCancel={handleCancel}
           />

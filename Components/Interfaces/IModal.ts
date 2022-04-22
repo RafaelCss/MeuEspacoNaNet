@@ -1,6 +1,7 @@
 export interface Modal {
-  msg?: string;
-  isModalVisible?: boolean;
-  onOk ?: () => boolean;
-  onCancel ?: () => boolean;
+  msg : string;
+  isModalVisible: boolean;
+  title : string;
+  onOk : () => boolean;
+  onCancel : () => boolean;
 }

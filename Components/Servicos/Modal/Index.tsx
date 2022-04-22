@@ -7,11 +7,12 @@ export const ModalApp = ({
   isModalVisible,
   onOk,
   onCancel,
+  title,
 }: Modal) => {
 
   return (
     <ModalAviso
-      title="Basic Modal"
+      title={title}
       visible={isModalVisible}
       onOk={onOk}
       onCancel={onCancel}
