@@ -1,34 +1,23 @@
-import { Modal, Button } from 'antd';
-import { useState } from 'react';
+import { useState } from 'react'
+import { Modal } from '../../Interfaces/IModal'
+import { ModalAviso } from './Style'
 
-
-
-const App = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
+export const ModalApp = ({
+  msg,
+  isModalVisible,
+  handleOk,
+  handleCancel,
+  onOk,
+  onCancel,
+}: Modal) => {
   return (
-    <>
-      <Button type="primary" onClick={showModal}>
-        Open Modal
-      </Button>
-      <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Modal>
-    </>
+    <ModalAviso
+      title="Basic Modal"
+      visible={isModalVisible}
+      onOk={() => handleOk}
+      onCancel={handleCancel}
+    >
+      <p>{msg}</p>
+    </ModalAviso>
   )
-
 }

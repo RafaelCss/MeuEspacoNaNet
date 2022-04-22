@@ -84,7 +84,7 @@ export const cursos =[
     botao: "Certificado",
   },
   {
-    tec: "FAM Faculdade da Americas",
+    tec: "FAM",
     img: "/image/fam.png",
     link: "https://udemy-certificate.s3.amazonaws.com/image/UC-6b0f8f22-5d75-408d-a203-7d01485093a7.jpg",
     comentario: 'Curso em andamento de Sistemas da Informações',
