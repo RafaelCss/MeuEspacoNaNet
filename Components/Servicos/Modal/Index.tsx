@@ -5,17 +5,16 @@ import { ModalAviso } from './Style'
 export const ModalApp = ({
   msg,
   isModalVisible,
-  handleOk,
-  handleCancel,
   onOk,
   onCancel,
 }: Modal) => {
+
   return (
     <ModalAviso
       title="Basic Modal"
       visible={isModalVisible}
-      onOk={() => handleOk}
-      onCancel={handleCancel}
+      onOk={onOk}
+      onCancel={onCancel}
     >
       <p>{msg}</p>
     </ModalAviso>

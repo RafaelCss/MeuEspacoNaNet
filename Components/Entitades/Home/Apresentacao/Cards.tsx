@@ -21,10 +21,12 @@ export default function CarrosselTecnologias() {
 
   const handleOk = () => {
     setIsModalVisible(false)
+    return isModalVisible
   }
 
   const handleCancel = () => {
     setIsModalVisible(false)
+    return isModalVisible
   }
   useEffect(()=>{
     handleOk
@@ -81,12 +83,11 @@ export default function CarrosselTecnologias() {
                 )
             }
           })}
-
           <ModalApp
-            onOk={()=>handleOk}
+            onOk={handleOk}
             msg="Cursando Sistemas da Informação no 3º período"
             isModalVisible={isModalVisible}
-            onCancel={()=>handleCancel}
+            onCancel={handleCancel}
           />
       </ContainerCards>
     </ContainerTecnologias>
