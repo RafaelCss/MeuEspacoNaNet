@@ -5,7 +5,7 @@ import axios from 'axios'
 
 export default function Mostruario({ repos }): ReactElement {
   const [valor, setValor] = useState([])
-  const url = process.env.BASE_URL
+
   useEffect(() => {
     axios
       .get('https://api.github.com/users/RafaelCss/repos')
