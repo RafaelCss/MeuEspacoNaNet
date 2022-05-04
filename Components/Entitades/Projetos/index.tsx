@@ -1,6 +1,8 @@
 import Menu from '../../Servicos/Header/Index'
 import  Rodape  from '../../Servicos/Footer/Index'
 import Exibicao from './Animacao'
+import Mostruario from './Apresentacao'
+
 
 export default function PageProjetos(){
 
@@ -8,6 +10,7 @@ export default function PageProjetos(){
     <>
     <Menu/>
     <Exibicao/>
+    <Mostruario />
     <Rodape/>
     </>
   )

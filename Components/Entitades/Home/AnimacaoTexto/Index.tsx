@@ -17,7 +17,7 @@ function Banner() {
 
   useEffect(() => {
     animacaoTexto(mensagem);
-    setTexto(" ");
+    setTexto("");
   }, []);
 
   return (
@@ -25,7 +25,7 @@ function Banner() {
       <h1>Developer Web</h1>
       <Container>
         {texto}
-        <TextCursor />
+        <TextCursor/>
       </Container>
     </BannerHome>
   );

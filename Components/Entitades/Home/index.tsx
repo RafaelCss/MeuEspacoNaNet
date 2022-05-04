@@ -4,6 +4,8 @@ import Banner from './AnimacaoTexto/Index'
 import  Rodape  from '../../Servicos/Footer/Index'
 import Cards from './Apresentacao/Cards'
 
+
+
 function Home(): ReactElement {
   return (
     <>
@@ -16,3 +18,5 @@ function Home(): ReactElement {
 }
 
 export default Home
+
+
