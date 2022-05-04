@@ -3,7 +3,7 @@ import { CorpoPage, FotoPerfil , Titulo } from './Style'
 import axios from 'axios'
 
 
-export default function Mostruario({ repos }): ReactElement {
+export default function Mostruario(): ReactElement {
   const [valor, setValor] = useState([])
 
   useEffect(() => {
