@@ -66,12 +66,10 @@ function FormularioCadastro() {
           <Input.TextArea name={'descricao'} />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-          <Space direction='vertical'>
+          <Space direction='horizontal'>
             <Button type="primary" htmlType="submit" onClick={salvarDados}>
               Submit
             </Button>
-          </Space>
-          <Space direction='vertical'>
             <Button type="primary" htmlType="reset" onClick={onReset}>
               Limpar
             </Button>
