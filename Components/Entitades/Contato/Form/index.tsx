@@ -25,8 +25,9 @@ function FormularioCadastro() {
   const onReset = () => {
     form.resetFields();
   };
-  const onFinish = (values: any) => {
-    console.log(values);
+  const salvarDados = ( )=> {
+    const dados  = form.getFieldsValue(true);
+    console.log(dados);
   };
 
   return (
@@ -34,8 +35,6 @@ function FormularioCadastro() {
       <Form
         form={form}
         name="nest-messages"
-        
-        onFinish={onFinish}
         validateMessages={validateMessages}
       >
         <Form.Item
@@ -68,7 +67,7 @@ function FormularioCadastro() {
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
           <Space direction='vertical'>
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" htmlType="submit" onClick={salvarDados}>
               Submit
             </Button>
           </Space>
