@@ -9,7 +9,7 @@ export default function PageProjetos(){
   return (
     <>
     <Menu/>
-    <Exibicao/>
+    <Exibicao />
     <Mostruario />
     <Rodape/>
     </>
