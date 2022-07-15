@@ -23,14 +23,17 @@ const validateMessages = {
 
 function FormularioCadastro() {
   const [form] = Form.useForm()
-  const onReset = () => {
+  function limparFormulario () {
     form.resetFields();
   };
-  const salvarDados = ( )=> {
+  function salvarDados () {
     const dados  = form.getFieldsValue(true);
     const dadosUser = { ...dados, Id: Math.floor(Date.now() + Math.random()).toString(36)};
     console.log(dadosUser);
+    limparFormulario();
   };
+
+
 
   return (
     <ContainerForm >
@@ -72,7 +75,7 @@ function FormularioCadastro() {
             <Button type="primary" htmlType="submit" onClick={salvarDados}>
               Submit
             </Button>
-            <Button type="primary" htmlType="reset" onClick={onReset}>
+            <Button type="primary" htmlType="reset" onClick={limparFormulario}>
               Limpar
             </Button>
           </Space>
