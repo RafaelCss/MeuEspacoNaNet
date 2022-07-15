@@ -1,4 +1,5 @@
 import { Button, Form, Input, Space } from 'antd';
+import { match } from 'assert';
 import { ContainerForm, InputForm, LabelForm } from './style';
 
 
@@ -27,7 +28,8 @@ function FormularioCadastro() {
   };
   const salvarDados = ( )=> {
     const dados  = form.getFieldsValue(true);
-    console.log(dados);
+    const dadosUser = { ...dados, Id: Math.floor(Date.now() + Math.random()).toString(36)};
+    console.log(dadosUser);
   };
 
   return (
