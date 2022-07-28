@@ -1,12 +1,13 @@
 import { Button, Form, Input, Space } from 'antd';
-import { match } from 'assert';
 import { ContainerForm, InputForm, LabelForm } from './style';
-
+import axios from 'axios';
 
 const layout = {
   labelCol: { span: 8 },
   wrapperCol: { span: 16 },
 };
+
+
 
 /* eslint-disable no-template-curly-in-string */
 const validateMessages = {
@@ -23,14 +24,20 @@ const validateMessages = {
 
 function FormularioCadastro() {
   const [form] = Form.useForm()
-  function limparFormulario () {
+
+  function limparFormulario() {
     form.resetFields();
   };
-  function salvarDados () {
-    const dados  = form.getFieldsValue(true);
-    const dadosUser = { ...dados, Id: Math.floor(Date.now() + Math.random()).toString(36)};
-    console.log(dadosUser);
-    limparFormulario();
+
+
+  function salvarDados() {
+    form.validateFields().then(async () => {
+      const dados = form.getFieldsValue(true);
+      const resposta = (await axios.post('https://localhost:7083/api/ContatoClientes/', dados)).data
+      limparFormulario()
+      console.log(resposta);
+    //  resposta.status === 200 ? alert('Salvo com sucesso') : alert('Erro ao salvar')
+    });
   };
 
 
@@ -69,6 +76,13 @@ function FormularioCadastro() {
           label={<LabelForm>Descrição</LabelForm>}
         >
           <Input.TextArea name={'descricao'} />
+        </Form.Item>
+        <Form.Item
+          name={['telefone']}
+          rules={[{ required: true }]}
+          label={<LabelForm>Telefone:</LabelForm>}
+        >
+          <InputForm name={'telefone'} />
         </Form.Item>
         <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
           <Space direction='horizontal'>
