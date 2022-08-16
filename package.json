@@ -1,5 +1,7 @@
 {
-  "name": "npm",
+  "name": "site-pessoal",
+  "version": "1.0.0",
+  "description": "Site Pessoal",
   "private": true,
   "scripts": {
     "dev": "next dev",
