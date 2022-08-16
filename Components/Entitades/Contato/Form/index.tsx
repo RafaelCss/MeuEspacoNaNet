@@ -44,6 +44,7 @@ function FormularioCadastro() {
 
   return (
     <ContainerForm >
+      <div> <h1>Cadastro de Contato</h1> </div>
       <Form
         form={form}
         name="nest-messages"
@@ -74,13 +75,15 @@ function FormularioCadastro() {
           name={['descricao']}
           rules={[{ required: true }]}
           label={<LabelForm>Descrição</LabelForm>}
+          required
         >
           <Input.TextArea name={'descricao'} />
         </Form.Item>
         <Form.Item
           name={['telefone']}
+          required
+          label={'Telefone:'}
           rules={[{ required: true }]}
-          label={<LabelForm>Telefone:</LabelForm>}
         >
           <InputForm name={'telefone'} />
         </Form.Item>
