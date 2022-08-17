@@ -35,7 +35,31 @@ export const ContainerCards = styled.div`
   height:80%;
   text-align: center;
   justify-content: space-around;
-  align-items: center;   
+  align-items: center;
+`;
+
+export const ContainerVidro = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
 `;
 
 export const Card = styled.div`
@@ -60,14 +84,28 @@ export const Card = styled.div`
 `;
 
 
-export const CardCarousel = styled(Carousel)`
+export const CardCarousel = styled.div`
   display: flex;
-  text-align: center;
-  justify-content: center;
+  flex-direction: column;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  margin:0px;
-  width: 500px;
-  height: 300px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
 `;
 
 export const CardCursos = styled.div`

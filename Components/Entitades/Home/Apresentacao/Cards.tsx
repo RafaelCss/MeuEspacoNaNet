@@ -5,11 +5,12 @@ import {
   ContainerCards,
   CardCarousel,
   CardCursos,
+  ContainerVidro,
 } from './Style'
 import Image from 'next/image'
 import Link from 'next/link'
 import { tecnologias, cursos } from './tecnologias'
-import { ModalApp } from '../../../Servicos/Modal/Index'
+import { ModalApp } from '../../../Modal/Index'
 import { useEffect, useState } from 'react'
 
 export default function CarrosselTecnologias() {
@@ -35,8 +36,8 @@ export default function CarrosselTecnologias() {
   return (
     <ContainerTecnologias>
       <Titulo>Tecnologias</Titulo>
-      <ContainerCards>
-        <CardCarousel autoplay>
+      <ContainerVidro>
+        <CardCarousel>
           {tecnologias.map((item) => {
             return (
               <>
@@ -44,7 +45,7 @@ export default function CarrosselTecnologias() {
                   <Image
                     src={item.img}
                     alt={item.tec}
-                    width={200}
+                    width={100}
                     height={200}
                   />
                 </Card>
@@ -52,7 +53,7 @@ export default function CarrosselTecnologias() {
             )
           })}
         </CardCarousel>
-      </ContainerCards>
+      </ContainerVidro>
       <ContainerCards>
         <Titulo>Cursos e Formações</Titulo>
           {cursos.map((item, index) => {

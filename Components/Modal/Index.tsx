@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Modal } from '../../Interfaces/IModal'
+import { Modal } from '../Servicos/Interfaces/IModal'
 import { ModalAviso } from './Style'
 
 export const ModalApp = ({

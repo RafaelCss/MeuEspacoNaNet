@@ -2,8 +2,8 @@ import { RodapeHome } from "./Style";
 import Icon, { WhatsAppOutlined } from '@ant-design/icons';
 import Image from "next/image";
 import Link from "next/link";
-import github from '../../../public/image/github.svg';
-import linkedin from "../../../public/image/linkedin.svg";
+import github from '../../public/image/github.svg';
+import linkedin from "../../public/image/linkedin.svg";
 
 export default function Rodape() {
   return (
