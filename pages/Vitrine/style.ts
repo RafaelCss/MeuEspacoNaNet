@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import styled from "styled-components";
 
 
@@ -22,5 +23,5 @@ const DivVidro = styled.div`
   `
 
 
-// eslint-disable-next-line import/no-anonymous-default-export
+
 export default {DivVidro, Container};
