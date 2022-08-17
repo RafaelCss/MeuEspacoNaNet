@@ -1,13 +1,13 @@
 import React from "react";
-import S from "./style";
+import {Container, DivVidro} from "./style";
 
 function Loja() {
   return (
-    <S.Container>
-      <S.DivVidro>
+    <Container>
+      <DivVidro>
         <h1>Loja</h1>
-      </S.DivVidro>
-    </S.Container>
+      </DivVidro>
+    </Container>
   )
 }
 

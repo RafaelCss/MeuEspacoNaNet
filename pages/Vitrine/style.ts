@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 
- const Container = styled.div`
+ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@ import styled from "styled-components";
   padding: 20px;
 `;
 
-const DivVidro = styled.div`
+export const DivVidro = styled.div`
   background: rgba( 255, 255, 255, 0.35 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.5px );
@@ -22,6 +22,3 @@ const DivVidro = styled.div`
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   `
 
-
-
-export default {DivVidro, Container};

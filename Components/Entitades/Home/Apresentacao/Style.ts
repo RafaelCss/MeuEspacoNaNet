@@ -62,7 +62,7 @@ export const Card = styled.div`
   }
   :hover {
     transform: scale( 1.1 );
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
 `;
 
