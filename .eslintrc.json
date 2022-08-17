@@ -1,4 +1,4 @@
-{
+/* {
   "import/no-anonymous-default-export": ["error", {
   "allowArray": false,
   "allowArrowFunction": false,
@@ -9,4 +9,4 @@
   "allowObject": true
 }]
 
-}
+} */
