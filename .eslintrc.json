@@ -6,7 +6,7 @@
   "allowAnonymousFunction": false,
   "allowCallExpression": true, // The true value here is for backward compatibility
   "allowLiteral": false,
-  "allowObject": false
+  "allowObject": true
 }]
 
 }
