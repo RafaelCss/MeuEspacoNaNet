@@ -5,7 +5,6 @@ import {
   ContainerCards,
   CardCarousel,
   CardCursos,
-  ContainerVidro,
 } from './Style'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -36,7 +35,6 @@ export default function CarrosselTecnologias() {
   return (
     <ContainerTecnologias>
       <Titulo>Tecnologias</Titulo>
-      <ContainerVidro>
         <CardCarousel>
           {tecnologias.map((item) => {
             return (
@@ -45,15 +43,14 @@ export default function CarrosselTecnologias() {
                   <Image
                     src={item.img}
                     alt={item.tec}
-                    width={200}
-                    height={200}
+                    width={100}
+                    height={100}
                   />
                 </Card>
               </>
             )
           })}
         </CardCarousel>
-      </ContainerVidro>
       <ContainerCards>
         <Titulo>Cursos e Formações</Titulo>
         {cursos.map((item, index) => {
