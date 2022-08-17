@@ -29,7 +29,7 @@ export default function CarrosselTecnologias() {
     setIsModalVisible(false)
     return isModalVisible
   }
-  useEffect(()=>{
+  useEffect(() => {
     handleOk
     handleCancel
   })
@@ -56,41 +56,41 @@ export default function CarrosselTecnologias() {
       </ContainerVidro>
       <ContainerCards>
         <Titulo>Cursos e Formações</Titulo>
-          {cursos.map((item, index) => {
-            switch (item.tec) {
-              case 'FAM':
-                return (
-                  <CardCursos onClick={showModal} key={index.toString()}>
+        {cursos.map((item, index) => {
+          switch (item.tec) {
+            case 'FAM':
+              return (
+                <CardCursos onClick={showModal} key={index.toString()}>
+                  <Image
+                    src={item.img}
+                    alt={item.tec}
+                    width={200}
+                    height={200}
+                  />
+                </CardCursos>
+              )
+            default:
+              return (
+                <CardCursos key={index.toString()}>
+                  <Link href={item.link} passHref>
                     <Image
                       src={item.img}
                       alt={item.tec}
                       width={200}
                       height={200}
                     />
-                  </CardCursos>
-                )
-              default:
-                return (
-                  <CardCursos key={index.toString()}>
-                    <Link href={item.link} passHref>
-                      <Image
-                        src={item.img}
-                        alt={item.tec}
-                        width={200}
-                        height={200}
-                      />
-                    </Link>
-                  </CardCursos>
-                )
-            }
-          })}
-          <ModalApp
-            title='FAM Faculdade das Americas'
-            onOk={handleOk}
-            msg={`Cursando Sistemas da Informação no 3º período`}
-            isModalVisible={isModalVisible}
-            onCancel={handleCancel}
-          />
+                  </Link>
+                </CardCursos>
+              )
+          }
+        })}
+        <ModalApp
+          title='FAM Faculdade das Americas'
+          onOk={handleOk}
+          msg={`Cursando Sistemas da Informação no 3º período`}
+          isModalVisible={isModalVisible}
+          onCancel={handleCancel}
+        />
       </ContainerCards>
     </ContainerTecnologias>
   )
