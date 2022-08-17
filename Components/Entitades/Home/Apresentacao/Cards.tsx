@@ -45,7 +45,7 @@ export default function CarrosselTecnologias() {
                   <Image
                     src={item.img}
                     alt={item.tec}
-                    width={100}
+                    width={200}
                     height={200}
                   />
                 </Card>
