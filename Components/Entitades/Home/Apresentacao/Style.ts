@@ -10,7 +10,7 @@ export const ContainerTecnologias = styled.section`
   margin: 0px 0px 0px 0px;
   width: 100%;
   height: 100%;
-  background-color:gray;
+ background-color:white;
 `;
 export const Titulo = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ export const Titulo = styled.div`
   font-size: 3rem;
   font-weight: 500;
   margin: 0px;
-  color: white;
+  color: black;
   h1 {
     font-size: 3em;
   }
