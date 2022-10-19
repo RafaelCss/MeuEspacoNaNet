@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { MenuHeader } from './Style'
+import Link from 'next/link';
+import { MenuHeader } from './Style';
 
 export default function Menu() {
   return (
@@ -14,5 +14,5 @@ export default function Menu() {
         <a>Contato</a>
       </Link>
     </MenuHeader>
-  )
+  );
 }

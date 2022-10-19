@@ -1,11 +1,10 @@
-import "antd/dist/antd.css";
+import 'antd/dist/antd.css';
 import 'antd/dist/antd.min.css';
 
-import { AppProps } from 'next/app'
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps } : AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
-
+export default MyApp;

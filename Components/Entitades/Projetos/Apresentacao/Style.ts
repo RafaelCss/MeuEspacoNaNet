@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const CorpoPage = styled.div`
   width: 100%;
@@ -17,7 +17,7 @@ export const CorpoPage = styled.div`
     font-weight: bold;
     text-decoration: none;
   }
-`
+`;
 
 export const Titulo = styled.h1`
   width: 100%;
@@ -33,7 +33,7 @@ export const Titulo = styled.h1`
   @media (max-width: 768px) {
     font-size: 3rem;
   }
-`
+`;
 
 export const FotoPerfil = styled.div`
   width: 100%;
@@ -41,4 +41,4 @@ export const FotoPerfil = styled.div`
   display: flex;
   align-items: center;
   background-color: beige;
-`
+`;

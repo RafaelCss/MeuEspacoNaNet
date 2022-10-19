@@ -1,17 +1,16 @@
-import { ReactElement, useEffect, useState } from 'react'
-import { CorpoPage, FotoPerfil , Titulo } from './Style'
-import axios from 'axios'
-
+import { ReactElement, useEffect, useState } from 'react';
+import { CorpoPage, FotoPerfil, Titulo } from './Style';
+import axios from 'axios';
 
 export default function Mostruario(): ReactElement {
-  const [valor, setValor] = useState([])
+  const [valor, setValor] = useState([]);
 
   useEffect(() => {
     axios
       .get('https://api.github.com/users/RafaelCss/repos')
-      .then((res) => setValor(res.data))
-      .catch((err) => err)
-  }, [])
+      .then(res => setValor(res.data))
+      .catch(err => err);
+  }, []);
 
   return (
     <CorpoPage>
@@ -20,7 +19,7 @@ export default function Mostruario(): ReactElement {
       </Titulo>
       <ul>
         {valor &&
-          valor.map((item) => (
+          valor.map(item => (
             <li key={item.id}>
               <a href={item.html_url}>{item.name}</a>
               <p>{item.description}</p>
@@ -29,5 +28,5 @@ export default function Mostruario(): ReactElement {
       </ul>
       <FotoPerfil />
     </CorpoPage>
-  )
+  );
 }

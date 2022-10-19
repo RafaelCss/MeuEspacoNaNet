@@ -1,16 +1,13 @@
-import Menu from '../../Header/Index'
-import Rodape from '../../Footer/Index'
-import FormularioCadastro from './Form'
+import Menu from '../../Header/Index';
+import Rodape from '../../Footer/Index';
+import FormularioCadastro from './Form';
 
-export default function PageContato(){
-
+export default function PageContato() {
   return (
     <>
-    <Menu/>
-    <FormularioCadastro/>
-    <Rodape/>
+      <Menu />
+      <FormularioCadastro />
+      <Rodape />
     </>
-  )
+  );
 }
-
-

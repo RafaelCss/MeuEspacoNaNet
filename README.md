@@ -1,4 +1,3 @@
-
 ## Getting Started
 
 First, run the development server:
@@ -32,5 +31,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
-** Correção Babel =  npm i babel-preset-next 
+\*\* Correção Babel = npm i babel-preset-next

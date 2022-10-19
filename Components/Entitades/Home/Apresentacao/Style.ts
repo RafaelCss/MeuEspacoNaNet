@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const ContainerTecnologias = styled.section`
   display: flex;
@@ -10,7 +9,7 @@ export const ContainerTecnologias = styled.section`
   margin: 0px 0px 0px 0px;
   width: 100%;
   height: 100%;
- background-color:white;
+  background-color: white;
 `;
 export const Titulo = styled.div`
   display: flex;
@@ -31,25 +30,23 @@ export const ContainerCards = styled.div`
   flex-wrap: wrap;
   margin: 10px 10px;
   width: 80%;
-  height:80%;
+  height: 80%;
   text-align: center;
   justify-content: space-around;
   align-items: center;
 `;
 
-
-
 export const Card = styled.div`
   display: flex;
-  background: rgba( 255, 255, 255, 0.35 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
   border-radius: 10px;
   width: 200px;
   height: 200px;
   align-items: center;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
   justify-content: center;
   margin: 10px;
   padding: 10px;
@@ -61,11 +58,10 @@ export const Card = styled.div`
     font-size: 1em;
   }
   :hover {
-    transform: scale( 1.1 );
+    transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
   }
 `;
-
 
 export const CardCarousel = styled.div`
   display: flex;
@@ -81,7 +77,7 @@ export const CardCursos = styled.div`
   align-items: center;
   margin: 20px 5px 5px 5px;
   width: 20%;
-  height:15%;
+  height: 15%;
   background-color: white;
   cursor: pointer;
 `;
