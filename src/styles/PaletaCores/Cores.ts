@@ -11,3 +11,10 @@ export const paleta = [
     DeepSkyBlue4: '#00688B'
   }
 ];
+
+export const coresPadrão = {
+  Blue: '#0000A3',
+  BlueGrotto: '#0067B3',
+  Yellow: '#FFD53D',
+  Aquamarine: '#40B0DF'
+};
