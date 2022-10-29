@@ -11,8 +11,13 @@ export const paleta = [
     DeepSkyBlue4: '#00688B'
   }
 ];
-
-export const coresPadrão = {
+interface ICores {
+  Blue: string;
+  BlueGrotto: string;
+  Yellow: string;
+  Aquamarine: string;
+}
+export const cores: ICores = {
   Blue: '#0000A3',
   BlueGrotto: '#0067B3',
   Yellow: '#FFD53D',

@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-
+import { cores } from '../../../../styles/PaletaCores/Cores';
 export const BannerHome = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,8 +8,9 @@ export const BannerHome = styled.div`
   overflow: hidden;
   width: 100%;
   height: 60vh;
-  background-color: grey;
+  background-color: ${cores.BlueGrotto};
   h1 {
+    color: ${cores.Yellow};
     font-size: 62px;
   }
 `;
