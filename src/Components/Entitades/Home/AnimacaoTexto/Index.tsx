@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BannerHome, TextCursor, Container, DivTeste } from './Style';
+import { BannerHome, TextCursor, Container } from './Style';
 
 function Banner() {
   const [mensagem, setMensagem] = useState<string>('SEJA BEM VINDO !');
@@ -22,9 +22,7 @@ function Banner() {
 
   return (
     <BannerHome>
-      <DivTeste>
-        <h1>Desenvolvedor Full-Stack</h1>
-      </DivTeste>
+      <h1>Desenvolvedor Full-Stack</h1>
       <Container>
         {texto}
         <TextCursor />

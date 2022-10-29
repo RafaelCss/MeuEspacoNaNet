@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal } from '../Servicos/Interfaces/IModal';
+import { Modal } from '../../servicos/Interfaces/IModal';
 import { ModalAviso } from './Style';
 
 export const ModalApp = ({ msg, isModalVisible, onOk, onCancel, title }: Modal) => {

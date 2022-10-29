@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const ContainerForm = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: gray;
   justify-content: center;
   align-items: center;
   margin: 24px 24px;
