@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerTecnologias = styled.section`
+export const ContainerTecnologias = styled.div`
   display: flex;
   overflow: auto;
   justify-content: center;

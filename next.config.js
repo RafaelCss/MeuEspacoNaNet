@@ -8,15 +8,11 @@ module.exports = {
 module.exports = withImages({
   esModule: true
 });
+
 module.exports = {
-  images: {
-    path: '/_next/image',
-    loader: 'default',
-    loaderFile: '',
-    disableStaticImages: false,
-    minimumCacheTTL: 60,
-    dangerouslyAllowSVG: false,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    unoptimized: false
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true
   }
 };

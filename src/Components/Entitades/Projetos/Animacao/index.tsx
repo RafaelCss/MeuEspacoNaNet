@@ -19,7 +19,7 @@ export default function Exibicao() {
     setInterval(() => {
       mudarCor();
     }, 1000);
-  }, []);
+  }, [cor]);
 
   return (
     <Fundo>

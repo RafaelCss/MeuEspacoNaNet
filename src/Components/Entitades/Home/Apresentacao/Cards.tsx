@@ -12,7 +12,13 @@ import Link from 'next/link';
 import { tecnologias, cursos } from './tecnologias';
 import { ModalApp } from '../../../Modal/Index';
 import { useEffect, useState } from 'react';
-
+interface IDadosCards {
+  id: number | string;
+  tec: string;
+  link?: string;
+  img: string;
+  comentario?: string;
+}
 export default function CarrosselTecnologias() {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -29,19 +35,16 @@ export default function CarrosselTecnologias() {
     setIsModalVisible(false);
     return isModalVisible;
   };
-  useEffect(() => {
-    handleOk;
-    handleCancel;
-  });
+
   return (
     <ContainerTecnologias>
       <Titulo>Tecnologias</Titulo>
       <CardCarousel>
-        {tecnologias.map((item, index) => {
+        {tecnologias?.map((item, index) => {
           return (
             <>
-              <Card id={item.tec}>
-                <Image key={Math.random()} src={item.img} alt={item.tec} width={100} height={100} />
+              <Card key={item.id} id={item.tec}>
+                <Image key={item.id} src={item.img} alt={item.tec} width={100} height={100} />
               </Card>
             </>
           );
@@ -49,31 +52,19 @@ export default function CarrosselTecnologias() {
       </CardCarousel>
       <ContainerCards>
         <Titulo>Cursos e Formações</Titulo>
-        {cursos.map((item, index) => {
+        {cursos?.map((item, index) => {
           switch (item.tec) {
             case 'FAM':
               return (
-                <CardCursos onClick={showModal} key={Math.random()}>
-                  <Image
-                    key={Math.random()}
-                    src={item.img}
-                    alt={item.tec}
-                    width={200}
-                    height={200}
-                  />
+                <CardCursos onClick={showModal} key={item.id}>
+                  <Image key={item.id} src={item.img} alt={item.tec} width={200} height={200} />
                 </CardCursos>
               );
             default:
               return (
-                <CardCursos key={Math.random()}>
-                  <Link href={item.link} passHref>
-                    <Image
-                      key={Math.random()}
-                      src={item.img}
-                      alt={item.tec}
-                      width={200}
-                      height={200}
-                    />
+                <CardCursos key={item.id}>
+                  <Link href={item.link} key={item.id} passHref>
+                    <Image key={item.id} src={item.img} alt={item.tec} width={200} height={200} />
                   </Link>
                 </CardCursos>
               );
