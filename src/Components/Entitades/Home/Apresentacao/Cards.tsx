@@ -40,13 +40,7 @@ export default function CarrosselTecnologias() {
           return (
             <>
               <Card id={item.tec}>
-                <Image
-                  key={index.toString()}
-                  src={item.img}
-                  alt={item.tec}
-                  width={100}
-                  height={100}
-                />
+                <Image key={Math.random()} src={item.img} alt={item.tec} width={100} height={100} />
               </Card>
             </>
           );
