@@ -1,6 +1,10 @@
 {
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    }
   },
 
   "env": {
