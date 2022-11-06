@@ -36,11 +36,17 @@ export default function CarrosselTecnologias() {
     <ContainerTecnologias>
       <Titulo>Tecnologias</Titulo>
       <CardCarousel>
-        {tecnologias.map(item => {
+        {tecnologias.map((item, index) => {
           return (
             <>
               <Card id={item.tec}>
-                <Image src={item.img} alt={item.tec} width={100} height={100} />
+                <Image
+                  key={index.toString()}
+                  src={item.img}
+                  alt={item.tec}
+                  width={100}
+                  height={100}
+                />
               </Card>
             </>
           );
@@ -53,14 +59,26 @@ export default function CarrosselTecnologias() {
             case 'FAM':
               return (
                 <CardCursos onClick={showModal} key={index.toString()}>
-                  <Image src={item.img} alt={item.tec} width={200} height={200} />
+                  <Image
+                    key={index.toString()}
+                    src={item.img}
+                    alt={item.tec}
+                    width={200}
+                    height={200}
+                  />
                 </CardCursos>
               );
             default:
               return (
                 <CardCursos key={index.toString()}>
                   <Link href={item.link} passHref>
-                    <Image src={item.img} alt={item.tec} width={200} height={200} />
+                    <Image
+                      key={index.toString()}
+                      src={item.img}
+                      alt={item.tec}
+                      width={200}
+                      height={200}
+                    />
                   </Link>
                 </CardCursos>
               );
