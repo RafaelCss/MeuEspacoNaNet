@@ -52,9 +52,9 @@ export default function CarrosselTecnologias() {
           switch (item.tec) {
             case 'FAM':
               return (
-                <CardCursos onClick={showModal} key={index.toString()}>
+                <CardCursos onClick={showModal} key={Math.random()}>
                   <Image
-                    key={index.toString()}
+                    key={Math.random()}
                     src={item.img}
                     alt={item.tec}
                     width={200}
@@ -64,10 +64,10 @@ export default function CarrosselTecnologias() {
               );
             default:
               return (
-                <CardCursos key={index.toString()}>
+                <CardCursos key={Math.random()}>
                   <Link href={item.link} passHref>
                     <Image
-                      key={index.toString()}
+                      key={Math.random()}
                       src={item.img}
                       alt={item.tec}
                       width={200}
