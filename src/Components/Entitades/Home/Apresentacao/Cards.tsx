@@ -43,7 +43,7 @@ export default function CarrosselTecnologias() {
         {tecnologias?.map((item, index) => {
           return (
             <>
-              <Card key={item.id} id={item.tec}>
+              <Card key={item.id.toString()} id={item.tec}>
                 <Image key={item.id} src={item.img} alt={item.tec} width={100} height={100} />
               </Card>
             </>
@@ -56,15 +56,27 @@ export default function CarrosselTecnologias() {
           switch (item.tec) {
             case 'FAM':
               return (
-                <CardCursos onClick={showModal} key={item.id}>
-                  <Image key={item.id} src={item.img} alt={item.tec} width={200} height={200} />
+                <CardCursos onClick={showModal} key={item.id.toString()}>
+                  <Image
+                    key={item.id.toString()}
+                    src={item.img}
+                    alt={item.tec}
+                    width={200}
+                    height={200}
+                  />
                 </CardCursos>
               );
             default:
               return (
-                <CardCursos key={item.id}>
-                  <Link href={item.link} key={item.id} passHref>
-                    <Image key={item.id} src={item.img} alt={item.tec} width={200} height={200} />
+                <CardCursos key={item.id.toString()}>
+                  <Link href={item.link} key={item.id.toString()} passHref>
+                    <Image
+                      key={item.id.toString()}
+                      src={item.img}
+                      alt={item.tec}
+                      width={200}
+                      height={200}
+                    />
                   </Link>
                 </CardCursos>
               );
