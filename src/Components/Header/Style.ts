@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-
+import { cores } from '../../styles/PaletaCores/Cores';
 export const MenuHeader = styled.header`
   display: flex;
-  background-color: #232526;
+  background-color: ${cores.BlueGrotto};
   width: 100%;
   height: 20vh;
   justify-content: space-evenly;

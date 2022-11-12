@@ -37,9 +37,9 @@ export default function CarrosselTecnologias() {
   };
 
   return (
-    <ContainerTecnologias>
+    <ContainerTecnologias className="container-tecnologias">
       <Titulo>Tecnologias</Titulo>
-      <CardCarousel>
+      <CardCarousel className="container-CardCarousel">
         {tecnologias?.map((item, index) => {
           return (
             <>
@@ -50,7 +50,7 @@ export default function CarrosselTecnologias() {
           );
         })}
       </CardCarousel>
-      <ContainerCards>
+      <ContainerCards className="container-Card">
         <Titulo>Cursos e Formações</Titulo>
         {cursos?.map((item, index) => {
           switch (item.tec) {
@@ -85,7 +85,7 @@ export default function CarrosselTecnologias() {
         <ModalApp
           title="FAM Faculdade das Americas"
           onOk={handleOk}
-          msg={`Cursando Sistemas da Informação no 3º período`}
+          msg={`Cursando Sistemas da Informação no 5º período`}
           isModalVisible={isModalVisible}
           onCancel={handleCancel}
         />

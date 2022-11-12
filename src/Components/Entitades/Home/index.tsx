@@ -7,10 +7,8 @@ import Cards from './Apresentacao/Cards';
 function Home(): ReactElement {
   return (
     <>
-      <Menu />
       <Banner />
       <Cards />
-      <Rodape />
     </>
   );
 }
