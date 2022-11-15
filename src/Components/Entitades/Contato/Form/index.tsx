@@ -1,11 +1,6 @@
-import { Button, Form, Input, Space } from 'antd';
-import { ContainerForm, InputForm } from './style';
-
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 }
-};
-
+import { Button, Space } from 'antd';
+import { ContainerForm, Form, Input } from './style';
+const { TextArea } = Input;
 const validateMessages = {
   required: '${label} is required!',
   types: {
@@ -26,7 +21,6 @@ function FormularioCadastro() {
   function salvarDados() {
     form.validateFields().then(async () => {
       const dados = form.getFieldsValue(true);
-
       //  resposta.status === 200 ? alert('Salvo com sucesso') : alert('Erro ao salvar')
     });
   }
@@ -34,23 +28,40 @@ function FormularioCadastro() {
   return (
     <ContainerForm>
       <div>
-        <h1>Cadastro de Contato</h1>
+        <h1>Pedido de serviço</h1>
       </div>
-      <Form form={form} name="nest-messages" validateMessages={validateMessages}>
+      <Form
+        layout="horizontal"
+        labelCol={{ span: 4 }}
+        form={form}
+        name="form-servico"
+        validateMessages={validateMessages}
+      >
         <Form.Item name="Nome" rules={[{ required: true }]} label="Nome">
-          <InputForm name="nome" />
+          <Input key="nome-contato" name="nome" />
         </Form.Item>
         <Form.Item name="Email" rules={[{ type: 'email', required: true }]} label="Email">
-          <InputForm name={'email'} />
+          <Input key="email-contato" name={'email'} />
+        </Form.Item>
+        <Form.Item name="telefone1" required label="Telefone:" rules={[{ required: true }]}>
+          <Input />
         </Form.Item>
         <Form.Item name="servico" rules={[{ required: true }]} label="Serviço">
-          <InputForm name={'servico'} />
+          <Input name={'servico'} />
         </Form.Item>
-        <Form.Item name="descricao" rules={[{ required: true }]} label="Descrição" required>
-          <Input.TextArea name="descricao" />
-        </Form.Item>
-        <Form.Item name="telefone" required label="Telefone:" rules={[{ required: true }]}>
-          <InputForm />
+        <Form.Item
+          name="descricao"
+          rules={[{ required: true, max: 200 }]}
+          label="Descrição"
+          required
+        >
+          <TextArea
+            showCount
+            autoSize={{ minRows: 3, maxRows: 5 }}
+            maxLength={200}
+            style={{ width: '400px', marginLeft: '10px', resize: 'none' }}
+            name="descricao"
+          />
         </Form.Item>
         <Space direction="horizontal">
           <Button key="btn-submit" type="primary" onClick={salvarDados}>

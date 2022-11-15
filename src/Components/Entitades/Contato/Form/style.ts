@@ -1,4 +1,4 @@
-import { Input } from 'antd';
+import { Input as InputAnt, Form as FormAnt } from 'antd';
 import styled from 'styled-components';
 
 export const ContainerForm = styled.section`
@@ -6,22 +6,19 @@ export const ContainerForm = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 24px 24px;
+  margin: 50px 10px 10px 5px;
   box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 600px;
 `;
 
-export const InputForm = styled(Input)`
+export const Input = styled(InputAnt)`
+  width: 400px;
+  margin-left: 10px;
+`;
+
+export const Form = styled(FormAnt)`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 24px 24px;
-  width: 100%;
-  height: 30px;
-`;
-
-export const LabelForm = styled.label`
-  display: flex;
-  margin: 5px;
-  width: 100%;
+  flex-direction: column;
 `;
