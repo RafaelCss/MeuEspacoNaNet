@@ -63,15 +63,15 @@ function FormularioCadastro() {
             name="descricao"
           />
         </Form.Item>
-        <Space direction="horizontal">
-          <Button key="btn-submit" type="primary" onClick={salvarDados}>
-            Enviar
-          </Button>
-          <Button key="btn-submit" type="primary" onClick={limparFormulario}>
-            Limpar
-          </Button>
-        </Space>
       </Form>
+      <Space direction="horizontal">
+        <Button key="btn-submit" type="primary" onClick={salvarDados}>
+          Enviar
+        </Button>
+        <Button key="btn-submit" type="primary" onClick={limparFormulario}>
+          Limpar
+        </Button>
+      </Space>
     </ContainerForm>
   );
 }
