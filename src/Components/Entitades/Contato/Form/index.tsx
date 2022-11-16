@@ -1,4 +1,6 @@
 import { Button, Space } from 'antd';
+import { BannerHome } from '../../Home/AnimacaoTexto/Style';
+import { Titulo } from '../../Home/Apresentacao/Style';
 import { ContainerForm, Form, Input } from './style';
 const { TextArea } = Input;
 const validateMessages = {
@@ -26,53 +28,55 @@ function FormularioCadastro() {
   }
 
   return (
-    <ContainerForm>
-      <div>
-        <h1>Pedido de serviço</h1>
-      </div>
-      <Form
-        layout="horizontal"
-        labelCol={{ span: 4 }}
-        form={form}
-        name="form-servico"
-        validateMessages={validateMessages}
-      >
-        <Form.Item name="Nome" rules={[{ required: true }]} label="Nome">
-          <Input key="nome-contato" name="nome" />
-        </Form.Item>
-        <Form.Item name="Email" rules={[{ type: 'email', required: true }]} label="Email">
-          <Input key="email-contato" name={'email'} />
-        </Form.Item>
-        <Form.Item name="telefone1" required label="Telefone:" rules={[{ required: true }]}>
-          <Input />
-        </Form.Item>
-        <Form.Item name="servico" rules={[{ required: true }]} label="Serviço">
-          <Input name={'servico'} />
-        </Form.Item>
-        <Form.Item
-          name="descricao"
-          rules={[{ required: true, max: 200 }]}
-          label="Descrição"
-          required
+    <>
+      <BannerHome>
+        <Titulo>Pedido de serviço</Titulo>
+      </BannerHome>
+      <ContainerForm>
+        <Form
+          layout="horizontal"
+          labelCol={{ span: 4 }}
+          form={form}
+          name="form-servico"
+          validateMessages={validateMessages}
         >
-          <TextArea
-            showCount
-            autoSize={{ minRows: 3, maxRows: 5 }}
-            maxLength={200}
-            style={{ width: '400px', marginLeft: '10px', resize: 'none' }}
+          <Form.Item name="Nome" rules={[{ required: true }]} label="Nome">
+            <Input key="nome-contato" name="nome" />
+          </Form.Item>
+          <Form.Item name="Email" rules={[{ type: 'email', required: true }]} label="Email">
+            <Input key="email-contato" name={'email'} />
+          </Form.Item>
+          <Form.Item name="telefone1" required label="Telefone:" rules={[{ required: true }]}>
+            <Input />
+          </Form.Item>
+          <Form.Item name="servico" rules={[{ required: true }]} label="Serviço">
+            <Input name={'servico'} />
+          </Form.Item>
+          <Form.Item
             name="descricao"
-          />
-        </Form.Item>
-      </Form>
-      <Space direction="horizontal">
-        <Button key="btn-submit" type="primary" onClick={salvarDados}>
-          Enviar
-        </Button>
-        <Button key="btn-submit" type="primary" onClick={limparFormulario}>
-          Limpar
-        </Button>
-      </Space>
-    </ContainerForm>
+            rules={[{ required: true, max: 200 }]}
+            label="Descrição"
+            required
+          >
+            <TextArea
+              showCount
+              autoSize={{ minRows: 3, maxRows: 5 }}
+              maxLength={200}
+              style={{ width: '400px', marginLeft: '10px', resize: 'none' }}
+              name="descricao"
+            />
+          </Form.Item>
+        </Form>
+        <Space direction="horizontal">
+          <Button key="btn-submit" type="primary" onClick={salvarDados}>
+            Enviar
+          </Button>
+          <Button key="btn-submit" type="primary" onClick={limparFormulario}>
+            Limpar
+          </Button>
+        </Space>
+      </ContainerForm>
+    </>
   );
 }
 
