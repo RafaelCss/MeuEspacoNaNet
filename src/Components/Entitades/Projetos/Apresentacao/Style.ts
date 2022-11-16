@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
-export const CorpoPage = styled.div`
-  width: 100%;
+export const ContainerProjetos = styled.div`
+  width: 90%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: left;
+  justify-content: space-evenly;
   text-decoration: none;
+  background-color: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
   ul {
     list-style: none;
   }
-
   li {
     font-size: 1rem;
     font-weight: bold;
@@ -36,9 +38,10 @@ export const Titulo = styled.h1`
 `;
 
 export const FotoPerfil = styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
+  width: 200px;
+  height: 250px;
+  justify-content: center;
   align-items: center;
-  background-color: beige;
+  background-color: black;
 `;

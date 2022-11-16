@@ -1,6 +1,8 @@
 import { ReactElement, useEffect, useState } from 'react';
-import { CorpoPage, FotoPerfil, Titulo } from './Style';
+import { ContainerProjetos, FotoPerfil, Titulo } from './Style';
 import axios from 'axios';
+import { BannerHome } from '../../Home/AnimacaoTexto/Style';
+import Image from 'next/image';
 
 export default function Mostruario(): ReactElement {
   const [valor, setValor] = useState([]);
@@ -13,20 +15,24 @@ export default function Mostruario(): ReactElement {
   }, []);
 
   return (
-    <CorpoPage>
-      <Titulo>
-        <h1>Projetos</h1>
-      </Titulo>
-      <ul>
-        {valor &&
-          valor.map(item => (
-            <li key={item.id}>
-              <a href={item.html_url}>{item.name}</a>
-              <p>{item.description}</p>
-            </li>
-          ))}
-      </ul>
-      <FotoPerfil />
-    </CorpoPage>
+    <>
+      <BannerHome>
+        <Titulo>Projetos</Titulo>
+      </BannerHome>
+      <ContainerProjetos>
+        <ul>
+          {valor &&
+            valor.map(item => (
+              <li key={item.id}>
+                <a href={item.html_url}>{item.name}</a>
+                <p>{item.description}</p>
+              </li>
+            ))}
+        </ul>
+        <FotoPerfil>
+          <img alt="minha foto" src={'https://avatars.githubusercontent.com/u/79381624?v=4'} />
+        </FotoPerfil>
+      </ContainerProjetos>
+    </>
   );
 }

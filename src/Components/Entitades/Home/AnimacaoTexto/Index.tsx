@@ -5,7 +5,7 @@ function Banner() {
   const [mensagem, setMensagem] = useState<string>('SEJA BEM VINDO !');
   const [texto, setTexto] = useState('');
 
-  async function animacaoTexto(texto1: string, i: number = 0): Promise<void> {
+  function animacaoTexto(texto1: string, i: number = 0) {
     if (i < mensagem.length) {
       setTexto(texto1.slice(0, i + 1));
       setTimeout(() => {
