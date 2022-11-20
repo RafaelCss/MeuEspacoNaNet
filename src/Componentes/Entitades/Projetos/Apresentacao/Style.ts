@@ -15,6 +15,7 @@ export const ContainerProjetos = styled.div`
     list-style: none;
   }
   li {
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;

@@ -1,6 +1,5 @@
 import React from 'react';
-import Home from '../Components/Entitades/Home';
-import Head from 'next/head';
+import Home from '../Componentes/Entitades/Home';
 
 export default function PaginaInicial() {
   return <Home />;

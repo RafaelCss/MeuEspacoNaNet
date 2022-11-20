@@ -69,7 +69,7 @@ export default function CarrosselTecnologias() {
             default:
               return (
                 <CardCursos key={item.id.toString()}>
-                  <Link href={item.link} key={item.id.toString()} passHref>
+                  <Link href={item.link} key={item.id.toString()} passHref legacyBehavior>
                     <Image
                       key={item.id.toString()}
                       src={item.img}

@@ -9,19 +9,7 @@ export const MenuHeader = styled.header`
   padding: 10px;
   margin-top: 0px;
   border-bottom: solid 1px white;
-  a {
-    list-style: none;
-    display: flex;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 30px;
-    cursor: pointer;
-    &:hover {
-      color: #ffc107;
-    }
-  }
+
   p {
     display: flex;
     justify-content: center;

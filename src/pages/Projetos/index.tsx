@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import PageProjetos from '../../Components/Entitades/Projetos';
+import PageProjetos from '../../Componentes/Entitades/Projetos';
 
 export default function Projetos(): ReactElement {
   return <PageProjetos />;
