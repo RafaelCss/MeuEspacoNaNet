@@ -1,9 +1,5 @@
 import Mostruario from './Apresentacao';
 
 export default function PageProjetos() {
-  return (
-    <>
-      <Mostruario />
-    </>
-  );
+  return <Mostruario key={'lista-de-projetos'} />;
 }

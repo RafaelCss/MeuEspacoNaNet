@@ -4,14 +4,14 @@ import { MenuHeader } from './Style';
 export default function Menu() {
   return (
     <MenuHeader>
-      <Link href="/">
-        <a>Home</a>
+      <Link href="/" legacyBehavior>
+        Home
       </Link>
-      <Link href="/Projetos">
-        <a>Projetos</a>
+      <Link href="/Projetos" legacyBehavior>
+        Projeto
       </Link>
-      <Link href="/Contato">
-        <a>Contato</a>
+      <Link href="/Contato" legacyBehavior>
+        Contato
       </Link>
     </MenuHeader>
   );

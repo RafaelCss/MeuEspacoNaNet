@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { cores } from '../../../../styles/PaletaCores/Cores';
+import { cores } from '../../../styles/PaletaCores/Cores';
 export const BannerHome = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import PageContato from '../../Components/Entitades/Contato/index';
+import PageContato from '../../Componentes/Entitades/Contato/index';
 
 export default function Contato() {
   return <PageContato />;

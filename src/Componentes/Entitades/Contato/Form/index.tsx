@@ -1,5 +1,5 @@
 import { Button, Space } from 'antd';
-import { BannerHome } from '../../Home/AnimacaoTexto/Style';
+import { BannerHome } from '../../../Animacoes/AnimacaoTexto/Style';
 import { Titulo } from '../../Home/Apresentacao/Style';
 import { ContainerForm, Form, Input } from './style';
 const { TextArea } = Input;
