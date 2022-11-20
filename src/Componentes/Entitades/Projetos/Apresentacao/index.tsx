@@ -1,8 +1,8 @@
-import { ReactElement } from 'react';
+import { ReactElement, SetStateAction, useEffect, useState } from 'react';
 import { ContainerProjetos, FotoPerfil, Titulo } from './Style';
-import axios from 'axios';
 import { BannerHome } from '../../../Animacoes/AnimacaoTexto/Style';
 import Link from 'next/link';
+import axios from 'axios';
 
 interface Retorno {
   resposta: DadosGitHub[];
@@ -14,7 +14,16 @@ export interface DadosGitHub {
   description: string;
   name: string;
 }
-export default function Mostruario({ resposta }: Retorno): ReactElement {
+export default function Mostruario(): ReactElement {
+  const [valor, setValor] = useState<DadosGitHub[]>();
+
+  useEffect(() => {
+    const resposta = axios
+      .get('https://api.github.com/users/RafaelCss/repos')
+      .then(res => setValor(res.data))
+      .catch(err => err);
+  }, []);
+
   return (
     <>
       <BannerHome>
@@ -22,8 +31,8 @@ export default function Mostruario({ resposta }: Retorno): ReactElement {
       </BannerHome>
       <ContainerProjetos>
         <ul>
-          {resposta &&
-            resposta.map(item => (
+          {valor &&
+            valor.map(item => (
               <li key={item.id}>
                 <Link href={item.html_url} legacyBehavior>
                   {item.name}
