@@ -14,6 +14,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.0.0",
     "@types/styled-components": "^5.1.26",
     "antd": "^5.0.0",
     "axios": "^1.1.3",
