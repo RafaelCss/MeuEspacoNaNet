@@ -6,7 +6,7 @@ export const ContainerForm = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 10px 10px 5px;
+  margin: 50px 0px 10px 0px;
   box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 600px;
