@@ -7,7 +7,7 @@ export const BannerHome = styled.div`
   align-items: center;
   overflow: hidden;
   width: 100%;
-  height: 60vh;
+  height: 30vh;
   background-color: ${cores.BlueGrotto};
   h1 {
     color: ${cores.Yellow};
