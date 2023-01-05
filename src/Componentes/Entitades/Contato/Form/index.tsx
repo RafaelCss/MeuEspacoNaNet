@@ -1,4 +1,5 @@
-import { Button, Space } from 'antd';
+import { Button, Space, Select } from 'antd';
+import { useState } from 'react';
 import { BannerHome } from '../../../Animacoes/AnimacaoTexto/Style';
 import { Titulo } from '../../Home/Apresentacao/Style';
 import { ContainerForm, Form, Input } from './style';
@@ -26,11 +27,17 @@ function FormularioCadastro() {
       //  resposta.status === 200 ? alert('Salvo com sucesso') : alert('Erro ao salvar')
     });
   }
-
+  const [newP, setNew] = useState<string>();
+  function fd(valor: string) {
+    const palavra1 = valor.substring(0, 50);
+    const palavr2 = valor.substring(50);
+    console.log(newP);
+    setNew(palavra1.replace(palavr2, ''));
+  }
   return (
     <>
       <BannerHome>
-        <Titulo>Pedido de serviço</Titulo>
+        <Titulo key={'pedido'}>Pedido de serviço</Titulo>
       </BannerHome>
       <ContainerForm>
         <Form
@@ -41,7 +48,7 @@ function FormularioCadastro() {
           validateMessages={validateMessages}
         >
           <Form.Item name="Nome" rules={[{ required: true }]} label="Nome">
-            <Input key="nome-contato" name="nome" />
+            <Input key="nome-contato" name="nome" value={newP} />
           </Form.Item>
           <Form.Item name="Email" rules={[{ type: 'email', required: true }]} label="Email">
             <Input key="email-contato" name={'email'} />
@@ -58,20 +65,21 @@ function FormularioCadastro() {
             label="Descrição"
             required
           >
-            <TextArea
+            <Select showSearch maxLength={50} onSearch={e => fd(e as string)} value={newP}></Select>
+            {/*             <TextArea
               showCount
               autoSize={{ minRows: 3, maxRows: 5 }}
               maxLength={200}
               style={{ width: '400px', marginLeft: '10px', resize: 'none' }}
               name="descricao"
-            />
+            /> */}
           </Form.Item>
         </Form>
         <Space direction="horizontal">
           <Button key="btn-submit" type="primary" onClick={salvarDados}>
             Enviar
           </Button>
-          <Button key="btn-submit" type="primary" onClick={limparFormulario}>
+          <Button key="btn-limpar-form" type="primary" onClick={limparFormulario}>
             Limpar
           </Button>
         </Space>
