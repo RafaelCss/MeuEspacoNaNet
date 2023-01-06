@@ -4,7 +4,7 @@ import { ModalAviso } from './Style';
 
 export const ModalApp = ({ msg, isModalVisible, onOk, onCancel, title }: Modal) => {
   return (
-    <ModalAviso title={title} visible={isModalVisible} onOk={onOk} onCancel={onCancel}>
+    <ModalAviso title={title} open={isModalVisible} onOk={onOk} onCancel={onCancel}>
       <p>{msg}</p>
     </ModalAviso>
   );

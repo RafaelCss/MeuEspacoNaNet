@@ -1,8 +1,9 @@
 const withImages = require('next-images');
 module.exports = {
   reactStrictMode: true,
-  env: {
-    BASE_URL: 'https://api.github.com/users/RafaelCss/repos'
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
   }
 };
 module.exports = withImages({
