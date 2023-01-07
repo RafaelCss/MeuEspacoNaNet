@@ -66,13 +66,6 @@ function FormularioCadastro() {
             required
           >
             <Select showSearch maxLength={50} onSearch={e => fd(e as string)} value={newP}></Select>
-            {/*             <TextArea
-              showCount
-              autoSize={{ minRows: 3, maxRows: 5 }}
-              maxLength={200}
-              style={{ width: '400px', marginLeft: '10px', resize: 'none' }}
-              name="descricao"
-            /> */}
           </Form.Item>
         </Form>
         <Space direction="horizontal">
