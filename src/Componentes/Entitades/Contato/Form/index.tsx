@@ -53,7 +53,7 @@ function FormularioCadastro() {
           <Form.Item name="Email" rules={[{ type: 'email', required: true }]} label="Email">
             <Input key="email-contato" name={'email'} />
           </Form.Item>
-          <Form.Item name="telefone1" required label="Telefone:" rules={[{ required: true }]}>
+          <Form.Item name="telefone" required label="Telefone:" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
           <Form.Item name="servico" rules={[{ required: true }]} label="Serviço">
