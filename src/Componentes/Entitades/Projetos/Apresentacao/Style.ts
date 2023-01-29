@@ -7,7 +7,6 @@ export const ContainerProjetos = styled.div`
   align-items: flex-start;
   justify-content: space-evenly;
   text-decoration: none;
-  background-color: black;
   margin-top: 50px;
   margin-left: 50px;
   padding: 20px;
@@ -44,5 +43,4 @@ export const FotoPerfil = styled.div`
   height: 250px;
   justify-content: center;
   align-items: center;
-  background-color: black;
 `;

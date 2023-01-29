@@ -26,9 +26,7 @@ export default function Mostruario(): ReactElement {
 
   return (
     <>
-      <BannerHome>
-        <Titulo>Projetos</Titulo>
-      </BannerHome>
+      <Titulo>Projetos</Titulo>
       <ContainerProjetos>
         <ul>
           {valor &&

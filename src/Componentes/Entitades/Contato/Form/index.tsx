@@ -36,9 +36,7 @@ function FormularioCadastro() {
   }
   return (
     <>
-      <BannerHome>
-        <Titulo key={'pedido'}>Pedido de serviço</Titulo>
-      </BannerHome>
+      <Titulo key={'pedido'}>Contato</Titulo>
       <ContainerForm>
         <Form
           layout="horizontal"
