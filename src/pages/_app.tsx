@@ -1,14 +1,12 @@
 import { AppProps } from 'next/app';
-import Rodape from '../Componentes/Footer/Index';
-import Menu from '../Componentes/Header/Index';
 import 'antd/dist/reset.css';
+import GlobalStyle from '../styles/Global';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Menu />
-      <Component {...pageProps} />;
-      <Rodape />
+      <GlobalStyle />
+      <Component {...pageProps} />
     </>
   );
 }

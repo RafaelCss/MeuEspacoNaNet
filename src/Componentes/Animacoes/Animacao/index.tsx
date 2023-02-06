@@ -4,10 +4,10 @@ import cores from './Cores';
 import tijolos from './Cores';
 
 export default function Exibicao() {
-  const [cor, setCor] = useState('');
-  const [tijolo, setTijolo] = useState('');
+  const [cor, setCor] = useState<string>();
+  const [tijolo, setTijolo] = useState<string>();
   function mudarCor() {
-    let ix: SetStateAction<string>;
+    let ix: string;
     for (let i = 0; i < cores.length; i++) {
       let index = Math.floor(Math.random() * cores.length);
       ix = cores[index];

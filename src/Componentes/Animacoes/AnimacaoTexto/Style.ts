@@ -8,9 +8,9 @@ export const BannerHome = styled.div`
   overflow: hidden;
   width: 100%;
   height: 30vh;
-  background-color: ${cores.BlueGrotto};
+  background-color: #00ffa7;
   h1 {
-    color: ${cores.Yellow};
+    color: white;
     font-size: 62px;
   }
 `;
@@ -20,7 +20,9 @@ export const blinkTextCursor = keyframes`
 `;
 
 export const TextCursor = styled.span`
-  color: black;
+  align-items: center;
+  justify-content: center;
+  color: white;
   height: 25px;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   display: inline;
@@ -30,9 +32,10 @@ export const TextCursor = styled.span`
 export const Container = styled.p`
   display: flex;
   justify-content: center;
+  align-items: center;
   left: 100px;
   margin: 0;
   font-size: 20px;
   font-weight: 500;
-  color: black;
+  color: white;
 `;

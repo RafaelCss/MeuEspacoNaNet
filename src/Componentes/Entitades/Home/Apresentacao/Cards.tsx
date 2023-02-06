@@ -37,14 +37,14 @@ export default function CarrosselTecnologias() {
   };
 
   return (
-    <ContainerTecnologias className="container-tecnologias">
+    <ContainerCards>
       <Titulo>Tecnologias</Titulo>
       <CardCarousel className="container-CardCarousel">
         {tecnologias?.map((item, index) => {
           return (
             <>
               <Card key={item.id.toString()} id={item.tec}>
-                <Image key={item.id} src={item.img} alt={item.tec} width={100} height={100} />
+                <img key={item.id} src={item.img} alt={item.tec} />
               </Card>
             </>
           );
@@ -57,26 +57,14 @@ export default function CarrosselTecnologias() {
             case 'FAM':
               return (
                 <CardCursos onClick={showModal} key={item.id.toString()}>
-                  <Image
-                    key={item.id.toString()}
-                    src={item.img}
-                    alt={item.tec}
-                    width={200}
-                    height={200}
-                  />
+                  <img key={item.id.toString()} src={item.img} alt={item.tec} />
                 </CardCursos>
               );
             default:
               return (
                 <CardCursos key={item.id.toString()}>
                   <Link href={item.link} key={item.id.toString()} passHref legacyBehavior>
-                    <Image
-                      key={item.id.toString()}
-                      src={item.img}
-                      alt={item.tec}
-                      width={200}
-                      height={200}
-                    />
+                    <img key={item.id.toString()} src={item.img} alt={item.tec} />
                   </Link>
                 </CardCursos>
               );
@@ -90,6 +78,6 @@ export default function CarrosselTecnologias() {
           onCancel={handleCancel}
         />
       </ContainerCards>
-    </ContainerTecnologias>
+    </ContainerCards>
   );
 }

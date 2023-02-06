@@ -3,12 +3,10 @@ import { cores } from '../../styles/PaletaCores/Cores';
 
 export const MenuHeader = styled.div`
   display: flex;
-  background-color: ${cores.BlueGrotto};
-  width: 100%;
-  height: 20vh;
+  width: 80%;
+  height: 10vh;
   justify-content: space-evenly;
-  padding: 10px;
-  margin-top: 0px;
+  // padding: 10px;
   a {
     text-decoration: none;
   }
@@ -21,10 +19,10 @@ export const Tag = styled.h2`
   width: 100px;
   height: 50px;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  margin: 30px;
+  margin-top: 1.5rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   cursor: pointer;
