@@ -1,9 +1,9 @@
 import { ReactElement, SetStateAction, useEffect, useState } from 'react';
-import { CardProjeto, ContainerProjetos, FotoPerfil, Titulo } from './Style';
+import { CardProjeto, ContainerProjetos, FotoPerfil, Paragrafo, Titulo } from './Style';
 import { BannerHome } from '../../../Animacoes/AnimacaoTexto/Style';
 import Link from 'next/link';
 import axios from 'axios';
-import { List } from 'antd';
+import { List, Space } from 'antd';
 import { Card, CardCarousel, ContainerCards } from '../../Home/Apresentacao/Style';
 
 interface Retorno {
@@ -32,8 +32,12 @@ export default function Mostruario(): ReactElement {
       {dadosGitHub &&
         dadosGitHub.map(item => (
           <CardProjeto id={item.id as string}>
-            <Link href={item.html_url}>{item.name}</Link>
-            <p>{item.description}</p>
+            <Space direction="vertical">
+              <Link href={item.html_url}>{<Paragrafo>{item.name}</Paragrafo>}</Link>
+            </Space>
+            <Space direction="vertical">
+              <p>{item.description}</p>
+            </Space>
           </CardProjeto>
         ))}
     </ContainerCards>

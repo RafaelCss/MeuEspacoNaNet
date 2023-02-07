@@ -3,21 +3,19 @@ import { cores } from '../../styles/PaletaCores/Cores';
 
 export const MenuHeader = styled.div`
   display: flex;
+  flex-direction: column;
   width: 80%;
-  height: 10vh;
+  height: 50vh;
+  align-items: center;
+  text-align: center;
   justify-content: space-evenly;
-  // padding: 10px;
+  padding: 0.5;
   a {
     text-decoration: none;
   }
 `;
 
 export const Tag = styled.h2`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100px;
-  height: 50px;
   color: white;
   font-size: 2rem;
   font-weight: bold;

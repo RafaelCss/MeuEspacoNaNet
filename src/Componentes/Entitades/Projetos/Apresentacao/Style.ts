@@ -35,27 +35,39 @@ export const FotoPerfil = styled.div`
 
 export const CardProjeto = styled.div`
   display: flex;
-  background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(13.5px);
-  -webkit-backdrop-filter: blur(13.5px);
-  border-radius: 10px;
-  width: 20vw;
-  height: 20vh;
+  flex-direction: column;
+  width: 15vw;
+  height: 15vh;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   justify-content: center;
   text-align: center;
   margin: 0.5rem 0.5rem;
   padding: 2rem;
   object-fit: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: rgba(235, 110, 140, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  color: white;
+  text-decoration: none;
   :hover {
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
   }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
 `;
+
+export const Paragrafo = styled.p`
+  display: block;
+  font-size: 1rem;
+  color: #ffc107;
+`;
+
+/* background: rgba(255, 255, 255, 0.08);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+  */
