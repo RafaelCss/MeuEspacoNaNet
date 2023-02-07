@@ -46,9 +46,7 @@ export const CardProjeto = styled.div`
   object-fit: cover;
   box-sizing: border-box;
   overflow: hidden;
-  background: rgba(235, 110, 140, 0.3);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   color: white;
