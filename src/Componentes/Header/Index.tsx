@@ -1,19 +1,29 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { DownOutlined, MenuOutlined } from '@ant-design/icons';
 import { Button, Menu as MenuAnt } from 'antd';
 import { MenuHeader, Tag } from './Style';
+import DrawerMenu from '../Drawer';
 
 export default function Menu() {
-  const [collapsed, setCollapsed] = useState<string>('none');
+  const [collapsed, setCollapsed] = useState<boolean>(false);
 
   const toggleCollapsed = () => {
-    setCollapsed('block');
+    switch (collapsed) {
+      case true:
+        setCollapsed(false);
+        break;
+      case false:
+        setCollapsed(true);
+        break;
+      default:
+        setCollapsed(false);
+    }
   };
 
   function Modals() {
     return (
-      <MenuHeader style={{ display: collapsed }}>
+      <MenuHeader>
         <Link href="/">
           <Tag> Home</Tag>
         </Link>
@@ -26,19 +36,27 @@ export default function Menu() {
       </MenuHeader>
     );
   }
-
+  function onClose() {
+    setCollapsed(false);
+  }
   return (
-    <div style={{ width: 256 }}>
+    <>
       <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
-        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+        <MenuOutlined />
       </Button>
-      <MenuAnt
-        defaultSelectedKeys={['1']}
-        defaultOpenKeys={['sub1']}
-        mode="inline"
-        theme="dark"
-        children={<>{Modals}</>}
-      />
-    </div>
+      <DrawerMenu onClose={onClose} open={collapsed} title={''}>
+        <>
+          <Link href="/">
+            <Tag> Home</Tag>
+          </Link>
+          <Link href="/Projetos">
+            <Tag>Projetos</Tag>
+          </Link>
+          <Link href="/Contato">
+            <Tag>Contato</Tag>
+          </Link>
+        </>
+      </DrawerMenu>
+    </>
   );
 }
