@@ -2,11 +2,15 @@ import styled from 'styled-components';
 
 export const ContainerProjetos = styled.div`
   display: flex;
-  width: 100%;
-  height: 50vh;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+  width: 80%;
+  height: 80%;
+  margin-left: 1rem;
+  text-align: center;
   justify-content: center;
-  color: #ffc107;
+  align-items: center;
 `;
 
 export const Titulo = styled.h1`
@@ -17,8 +21,9 @@ export const Titulo = styled.h1`
   margin-bottom: 1rem;
   margin-top: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-weight: bold;
   @media (max-width: 768px) {
     font-size: 3rem;

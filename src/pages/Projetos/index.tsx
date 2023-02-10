@@ -7,8 +7,17 @@ export default function Projetos(): ReactElement {
   return (
     <>
       <Menu />
-      <PageProjetos />
-      <Rodape />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          alignContent: 'center'
+        }}
+      >
+        <PageProjetos />
+        <Rodape />
+      </div>
     </>
   );
 }

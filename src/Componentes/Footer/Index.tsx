@@ -1,8 +1,10 @@
-import { RodapeHome } from './Style';
 import { WhatsAppOutlined, LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
 import Link from 'next/link';
+import { RodapeHome } from './style';
 
 export default function Rodape() {
+  const anos = new Date();
+  anos.getFullYear();
   return (
     <RodapeHome>
       <Link href={'https://github.com/RafaelCss'} legacyBehavior>
@@ -19,7 +21,9 @@ export default function Rodape() {
       >
         <WhatsAppOutlined style={{ color: 'white', fontSize: '24px' }} />
       </Link>
-      <p style={{ color: 'white' }}>&copy; since 2022 Feito por Me Rafael C. &hearts;</p>
+      <p style={{ color: 'white' }}>
+        &copy;{`since ${anos.getFullYear()} Feito por Rafael Carlos De Souza`}
+      </p>
     </RodapeHome>
   );
 }

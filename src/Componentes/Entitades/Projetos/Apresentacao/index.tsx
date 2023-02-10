@@ -27,7 +27,7 @@ export default function Mostruario(): ReactElement {
   }, []);
 
   return (
-    <ContainerCards>
+    <ContainerProjetos>
       <Titulo>Projetos</Titulo>
       {dadosGitHub &&
         dadosGitHub.map(item => (
@@ -40,6 +40,6 @@ export default function Mostruario(): ReactElement {
             </Space>
           </CardProjeto>
         ))}
-    </ContainerCards>
+    </ContainerProjetos>
   );
 }

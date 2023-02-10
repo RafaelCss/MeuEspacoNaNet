@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { DownOutlined, MenuOutlined } from '@ant-design/icons';
-import { Button, Menu as MenuAnt } from 'antd';
+import { Affix, Button, Menu as MenuAnt } from 'antd';
 import { MenuHeader, Tag } from './Style';
 import DrawerMenu from '../Drawer';
 
 export default function Menu() {
   const [collapsed, setCollapsed] = useState<boolean>(false);
-
+  const [top, setTop] = useState(10);
   const toggleCollapsed = () => {
     switch (collapsed) {
       case true:
@@ -21,30 +21,30 @@ export default function Menu() {
     }
   };
 
-  function Modals() {
-    return (
-      <MenuHeader>
-        <Link href="/">
-          <Tag> Home</Tag>
-        </Link>
-        <Link href="/Projetos">
-          <Tag>Projetos</Tag>
-        </Link>
-        <Link href="/Contato">
-          <Tag>Contato</Tag>
-        </Link>
-      </MenuHeader>
-    );
-  }
   function onClose() {
     setCollapsed(false);
   }
   return (
     <>
-      <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
-        <MenuOutlined />
-      </Button>
-      <DrawerMenu onClose={onClose} open={collapsed} title={''}>
+      <Affix offsetTop={top}>
+        <Button
+          onClick={toggleCollapsed}
+          style={{
+            backgroundColor: 'yellow',
+            border: 'none',
+            width: '50px',
+            height: '50px',
+            fontSize: '32px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginLeft: '10px'
+          }}
+        >
+          <MenuOutlined />
+        </Button>
+      </Affix>
+      <DrawerMenu onClose={onClose} open={collapsed} title={'Menu'}>
         <>
           <Link href="/">
             <Tag> Home</Tag>

@@ -1,5 +1,6 @@
-import { Button, Space, Select } from 'antd';
+import { Space, Select } from 'antd';
 import { useState } from 'react';
+import Button from '../../../Button/ButtonNormal';
 import { Titulo } from '../../Home/Apresentacao/Style';
 import { ContainerForm, Form, Input } from './style';
 const { Option } = Select;
@@ -89,12 +90,8 @@ function FormularioCadastro() {
           </Form.Item>
         </Form>
         <Space direction="horizontal">
-          <Button key="btn-submit" type="primary" onClick={salvarDados}>
-            Enviar
-          </Button>
-          <Button key="btn-limpar-form" type="primary" onClick={limparFormulario}>
-            Limpar
-          </Button>
+          <Button.ButtonNormal children={<h2>Enviar</h2>} onClick={salvarDados} />
+          <Button.ButtonLimpar onClick={limparFormulario} children={<h2>Limpar</h2>} />
         </Space>
       </ContainerForm>
     </>

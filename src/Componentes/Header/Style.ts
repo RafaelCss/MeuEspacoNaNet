@@ -3,6 +3,7 @@ import { cores } from '../../styles/PaletaCores/Cores';
 
 export const MenuHeader = styled.div`
   display: flex;
+  z-index: 100;
   flex-direction: column;
   width: 80%;
   height: 50vh;
