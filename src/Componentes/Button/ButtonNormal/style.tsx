@@ -6,9 +6,9 @@ const ButtonEnviar = styled(ButtonAntd)`
   height: 5vh;
   color: #000000ef;
   border: none;
-  -webkit-box-shadow: -11px -15px 40px 1px rgba(157, 247, 139, 0.45);
-  -moz-box-shadow: -11px -15px 40px 1px rgba(149, 240, 131, 0.45);
-  box-shadow: -11px -15px 40px 1px rgba(159, 240, 83, 0.753);
+  -webkit-box-shadow: -11px -15px 40px 1px rgba(255, 255, 255, 0.068);
+  -moz-box-shadow: -11px -15px 40px 1px rgba(80, 78, 77, 0.021);
+  box-shadow: -11px -15px 40px 1px rgba(94, 92, 92, 0.014);
   background-color: #fbfdfb;
 `;
 
@@ -17,9 +17,9 @@ const ButtonLimpar = styled(ButtonAntd)`
   height: 5vh;
   color: #050404;
   border: none;
-  -webkit-box-shadow: -11px -15px 40px 1px rgba(250, 107, 107, 0.45);
-  -moz-box-shadow: -11px -15px 40px 1px rgba(250, 84, 54, 0.45);
-  box-shadow: -11px -15px 40px 1px rgba(252, 101, 101, 0.753);
+  -webkit-box-shadow: -11px -15px 40px 1px rgba(255, 255, 255, 0.068);
+  -moz-box-shadow: -11px -15px 40px 1px rgba(80, 78, 77, 0.021);
+  box-shadow: -11px -15px 40px 1px rgba(94, 92, 92, 0.014);
   background-color: #fcf7f6;
 `;
 

@@ -26,24 +26,22 @@ export default function Menu() {
   }
   return (
     <>
-      <Affix offsetTop={top}>
-        <Button
-          onClick={toggleCollapsed}
-          style={{
-            backgroundColor: 'yellow',
-            border: 'none',
-            width: '50px',
-            height: '50px',
-            fontSize: '32px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginLeft: '10px'
-          }}
-        >
-          <MenuOutlined />
-        </Button>
-      </Affix>
+      <Button
+        onClick={toggleCollapsed}
+        style={{
+          backgroundColor: 'yellow',
+          border: 'none',
+          width: '50px',
+          height: '50px',
+          fontSize: '32px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginLeft: '10px'
+        }}
+      >
+        <MenuOutlined />
+      </Button>
       <DrawerMenu onClose={onClose} open={collapsed} title={'Menu'}>
         <>
           <Link href="/">
