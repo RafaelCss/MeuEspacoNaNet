@@ -51,32 +51,29 @@ export default function CarrosselTecnologias() {
         })}
       </CardCarousel>
       <ContainerCards className="container-Card">
-        <Titulo>Cursos e Formações</Titulo>
-        {cursos?.map((item, index) => {
-          switch (item.tec) {
-            case 'FAM':
-              return (
-                <CardCursos onClick={showModal} key={item.id.toString()}>
+        <>
+          <Titulo>Cursos e Formações</Titulo>
+          {cursos?.map((item, index) => {
+            return item.tec === 'FAM' ? (
+              <CardCursos onClick={showModal} key={item.id.toString()}>
+                <img key={item.id.toString()} src={item.img} alt={item.tec} />
+              </CardCursos>
+            ) : (
+              <CardCursos key={item.id.toString()}>
+                <Link href={item.link} key={item.id.toString()} passHref legacyBehavior>
                   <img key={item.id.toString()} src={item.img} alt={item.tec} />
-                </CardCursos>
-              );
-            default:
-              return (
-                <CardCursos key={item.id.toString()}>
-                  <Link href={item.link} key={item.id.toString()} passHref legacyBehavior>
-                    <img key={item.id.toString()} src={item.img} alt={item.tec} />
-                  </Link>
-                </CardCursos>
-              );
-          }
-        })}
-        <ModalApp
-          title="FAM Faculdade das Americas"
-          onOk={handleOk}
-          msg={`Cursando Sistemas da Informação no 5º período`}
-          isModalVisible={isModalVisible}
-          onCancel={handleCancel}
-        />
+                </Link>
+              </CardCursos>
+            );
+          })}
+          <ModalApp
+            title="FAM Faculdade das Americas"
+            onOk={handleOk}
+            msg={`Cursando Sistemas da Informação no 5º período`}
+            isModalVisible={isModalVisible}
+            onCancel={handleCancel}
+          />
+        </>
       </ContainerCards>
     </ContainerCards>
   );
