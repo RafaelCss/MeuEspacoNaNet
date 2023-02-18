@@ -12,7 +12,7 @@ export default function Projetos(): ReactElement {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          alignContent: 'center'
+          alignContent: 'center',
         }}
       >
         <PageProjetos />

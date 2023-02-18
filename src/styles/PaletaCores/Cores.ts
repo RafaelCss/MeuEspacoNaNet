@@ -8,8 +8,8 @@ export const paleta = [
     DeepSkyBlue1: '#00BFFF',
     DeepSkyBlue2: '#00B2EE',
     DeepSkyBlue3: '#009ACD',
-    DeepSkyBlue4: '#00688B'
-  }
+    DeepSkyBlue4: '#00688B',
+  },
 ];
 interface ICores {
   Blue: string;
@@ -21,5 +21,5 @@ export const cores: ICores = {
   Blue: '#0000A3',
   BlueGrotto: '#0067B3',
   Yellow: '#FFD53D',
-  Aquamarine: '#40B0DF'
+  Aquamarine: '#40B0DF',
 };

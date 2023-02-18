@@ -5,7 +5,7 @@ import {
   Card,
   ContainerCards,
   CardCarousel,
-  CardCursos
+  CardCursos,
 } from './Style';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -60,7 +60,12 @@ export default function CarrosselTecnologias() {
               </CardCursos>
             ) : (
               <CardCursos key={item.id.toString()}>
-                <Link href={item.link} key={item.id.toString()} passHref legacyBehavior>
+                <Link
+                  href={item.link}
+                  key={item.id.toString()}
+                  passHref
+                  legacyBehavior
+                >
                   <img key={item.id.toString()} src={item.img} alt={item.tec} />
                 </Link>
               </CardCursos>

@@ -20,7 +20,7 @@ export default function PaginaInicial() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          alignContent: 'center'
+          alignContent: 'center',
         }}
       >
         <GlobalStyle />

@@ -10,7 +10,13 @@ interface IDrawerMenu {
   title: string;
 }
 
-function DrawerMenu({ direcaoAbertura, onClose, open, children, title }: IDrawerMenu) {
+function DrawerMenu({
+  direcaoAbertura,
+  onClose,
+  open,
+  children,
+  title,
+}: IDrawerMenu) {
   const placement: DrawerProps['placement'] = 'left';
 
   return (

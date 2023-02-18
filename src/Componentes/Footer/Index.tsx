@@ -1,4 +1,8 @@
-import { WhatsAppOutlined, LinkedinOutlined, GithubOutlined } from '@ant-design/icons';
+import {
+  WhatsAppOutlined,
+  LinkedinOutlined,
+  GithubOutlined,
+} from '@ant-design/icons';
 import Link from 'next/link';
 import { RodapeHome } from './style';
 
@@ -10,7 +14,10 @@ export default function Rodape() {
       <Link href={'https://github.com/RafaelCss'} legacyBehavior>
         <GithubOutlined style={{ color: 'white', fontSize: '24px' }} />
       </Link>
-      <Link href={'https://www.linkedin.com/in/rafael-carlos-a1a007201/'} legacyBehavior>
+      <Link
+        href={'https://www.linkedin.com/in/rafael-carlos-a1a007201/'}
+        legacyBehavior
+      >
         <LinkedinOutlined style={{ color: 'white', fontSize: '24px' }} />
       </Link>
       <Link

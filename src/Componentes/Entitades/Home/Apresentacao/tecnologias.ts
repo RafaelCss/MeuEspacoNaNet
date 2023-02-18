@@ -11,72 +11,78 @@ export const tecnologias: IDadosCards[] = [
     tec: 'JavaScript',
     link: '',
     img: '/image/javascript.png',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 2,
     tec: 'C#',
     link: '',
     img: '/image/cshap.png',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 3,
     tec: 'ReactJS',
     link: '',
     img: '/image/react.png',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 4,
     tec: 'HTML',
     link: '',
     img: '/image/html.png',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 5,
     tec: 'CSS',
     link: '',
     img: '/image/css.png',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 6,
     tec: 'Orm Prisma',
     link: '',
     img: '/image/prisma.png',
-    comentario: ''
+    comentario: '',
   },
-  { id: 7, tec: 'Entity Framework', link: '', img: '/image/entity.jpg', comentario: '' },
+  {
+    id: 7,
+    tec: 'Entity Framework',
+    link: '',
+    img: '/image/entity.jpg',
+    comentario: '',
+  },
   {
     id: 8,
     tec: 'Mysql',
     link: '',
     img: '/image/mysql.png',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 9,
     tec: 'Ant Design',
     link: '',
     img: '/image/antd.jpg',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 10,
     tec: 'NextJS',
     link: '',
     img: '/image/next.jpg',
-    comentario: ''
+    comentario: '',
   },
   {
     id: 11,
     tec: 'TypeScript',
     link: '',
     img: '/image/typescript.png',
-    comentario: ''
-  }
+    comentario: '',
+  },
 ];
 
 export const cursos = [
@@ -86,7 +92,7 @@ export const cursos = [
     img: '/image/alura.jpg',
     link: 'https://cursos.alura.com.br/user/rafael-souza44/fullCertificate/3ea0b3c966e6efaae83e50366cbb3055',
     comentario: 'Certificado de cursos feitos na Alura',
-    botao: 'Certificado'
+    botao: 'Certificado',
   },
   {
     id: 13,
@@ -94,7 +100,7 @@ export const cursos = [
     img: '/image/udemy.png',
     link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-6b0f8f22-5d75-408d-a203-7d01485093a7.jpg',
     comentario: 'Certificado de cursos feitos na Udemy',
-    botao: 'Certificado'
+    botao: 'Certificado',
   },
   {
     id: 14,
@@ -102,6 +108,6 @@ export const cursos = [
     img: '/image/fam.png',
     link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-6b0f8f22-5d75-408d-a203-7d01485093a7.jpg',
     comentario: 'Curso em andamento de Sistemas da Informações',
-    botao: 'Certificado'
-  }
+    botao: 'Certificado',
+  },
 ];

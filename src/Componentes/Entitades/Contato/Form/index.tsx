@@ -8,11 +8,11 @@ const validateMessages = {
   required: '${label} is required!',
   types: {
     email: '${label} is not a valid email!',
-    number: '${label} is not a valid number!'
+    number: '${label} is not a valid number!',
   },
   number: {
-    range: '${label} must be between ${min} and ${max}'
-  }
+    range: '${label} must be between ${min} and ${max}',
+  },
 };
 
 function FormularioCadastro() {
@@ -84,14 +84,20 @@ function FormularioCadastro() {
           >
             <Input.TextArea
               style={{ width: '60rem' }}
-              onChange={e => fd(e.target.value as string)}
+              onChange={(e) => fd(e.target.value as string)}
               value={newP}
             />
           </Form.Item>
         </Form>
         <Space direction="horizontal">
-          <Button.ButtonNormal children={<h2>Enviar</h2>} onClick={salvarDados} />
-          <Button.ButtonLimpar onClick={limparFormulario} children={<h2>Limpar</h2>} />
+          <Button.ButtonNormal
+            children={<h2>Enviar</h2>}
+            onClick={salvarDados}
+          />
+          <Button.ButtonLimpar
+            onClick={limparFormulario}
+            children={<h2>Limpar</h2>}
+          />
         </Space>
       </ContainerForm>
     </>

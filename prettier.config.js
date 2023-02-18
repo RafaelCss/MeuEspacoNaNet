@@ -6,5 +6,5 @@ module.exports = {
   tabWidth: 2,
   endOfLine: 'lf',
   useTabs: false,
-  printWidth: 100
+  printWidth: 100,
 };

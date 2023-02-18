@@ -23,8 +23,13 @@ export default function Exibicao() {
 
   return (
     <Fundo>
-      {tijolos.map(item => {
-        return <Tijolos key={item} style={{ backgroundColor: `${cor}`, width: tijolo }} />;
+      {tijolos.map((item) => {
+        return (
+          <Tijolos
+            key={item}
+            style={{ backgroundColor: `${cor}`, width: tijolo }}
+          />
+        );
       })}
     </Fundo>
   );

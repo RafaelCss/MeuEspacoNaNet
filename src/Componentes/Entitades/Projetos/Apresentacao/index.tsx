@@ -1,10 +1,20 @@
 import { ReactElement, SetStateAction, useEffect, useState } from 'react';
-import { CardProjeto, ContainerProjetos, FotoPerfil, Paragrafo, Titulo } from './Style';
+import {
+  CardProjeto,
+  ContainerProjetos,
+  FotoPerfil,
+  Paragrafo,
+  Titulo,
+} from './Style';
 import { BannerHome } from '../../../Animacoes/AnimacaoTexto/Style';
 import Link from 'next/link';
 import axios from 'axios';
 import { List, Space } from 'antd';
-import { Card, CardCarousel, ContainerCards } from '../../Home/Apresentacao/Style';
+import {
+  Card,
+  CardCarousel,
+  ContainerCards,
+} from '../../Home/Apresentacao/Style';
 
 interface Retorno {
   resposta: DadosGitHub[];
@@ -22,18 +32,20 @@ export default function Mostruario(): ReactElement {
   useEffect(() => {
     axios
       .get('https://api.github.com/users/RafaelCss/repos')
-      .then(res => setDadosGitHub(res.data))
-      .catch(err => err);
+      .then((res) => setDadosGitHub(res.data))
+      .catch((err) => err);
   }, []);
 
   return (
     <ContainerProjetos>
       <Titulo>Projetos</Titulo>
       {dadosGitHub &&
-        dadosGitHub.map(item => (
+        dadosGitHub.map((item) => (
           <CardProjeto id={item.id as string}>
             <Space direction="vertical">
-              <Link href={item.html_url}>{<Paragrafo>{item.name}</Paragrafo>}</Link>
+              <Link href={item.html_url}>
+                {<Paragrafo>{item.name}</Paragrafo>}
+              </Link>
             </Space>
             <Space direction="vertical">
               <p>{item.description}</p>
