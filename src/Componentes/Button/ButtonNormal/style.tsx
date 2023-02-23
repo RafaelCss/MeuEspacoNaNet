@@ -2,6 +2,10 @@ import { Button as ButtonAntd } from 'antd';
 import styled from 'styled-components';
 
 const ButtonEnviar = styled(ButtonAntd)`
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center;
   width: 25rem;
   height: 5vh;
   color: #000000ef;
@@ -13,6 +17,10 @@ const ButtonEnviar = styled(ButtonAntd)`
 `;
 
 const ButtonLimpar = styled(ButtonAntd)`
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center;
   width: 25rem;
   height: 5vh;
   color: #050404;
